@@ -2,423 +2,650 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>17/19 Urban Bistrot – Roma | Colazioni, Pranzi, Cene, Cocktail & DJ Set Techno</title>
-  <meta name="description" content="17/19 Urban Bistrot a Roma (Via di Santa Costanza 17/19): colazioni, pranzi, cene, cocktail signature e musica dal vivo con DJ set techno suonato in vinile." />
-  <meta name="theme-color" content="#000000" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
-  <!-- Open Graph -->
-  <meta property="og:title" content="17/19 Urban Bistrot – Roma" />
-  <meta property="og:description" content="Colazioni, pranzi, cene, cocktail e DJ set techno in vinile." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="it_IT" />
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff1a1a' font-family='Arial' font-size='80'%3E17/19 Urban Bistrot%3C/text%3E%3C/svg%3E" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23000'/%3E%3Ctext x='50' y='60' font-size='54' text-anchor='middle' fill='%23ff1a1a' font-family='Arial'%3E17%3C/text%3E%3C/svg%3E" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>17/19 Urban Bistrot Roma | Techno • Vinile • Cocktail</title>
+  <meta name="description" content="Urban bistrot a Roma. DJ set in vinile curated by Riccardo Battaglia. Colazioni, pranzi, cene e cocktail signature." />
+  <meta name="theme-color" content="#ff0040" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <style>
     :root{
-      --bg:#000; /* nero */
-      --fg:#f5f5f5;
-      --muted:#bfbfbf;
-      --accent:#ff1a1a; /* rosso primario */
-      --accent-2:#b30f0f; /* rosso profondo */
-      --card:#0d0d0d;
-      --radius:18px;
-      --max:1100px; /* più stretto per mobile */
-      --pad:clamp(14px,3vw,22px);
+      --bg:#000; --bg-dark:#0a0000; --fg:#fff; --muted:#a7a7a7;
+      --red:#ff0040; --red-light:#ff3366; --red-glow:rgba(255,0,64,.5); --red-subtle:rgba(255,0,64,.12);
+      --glass:rgba(255,255,255,.05); --glass-heavy:rgba(0,0,0,.8);
+      --radius:20px; --max:1200px; --pad:clamp(16px,4vw,32px);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;scroll-behavior:smooth}
-    img{max-width:100%;height:auto;display:block}
-    h1,h2,h3{font-family:'Unbounded',system-ui,sans-serif;letter-spacing:.5px;margin:0 0 .5rem}
-    h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.05}
-    h2{font-size:clamp(1.4rem,4.5vw,2rem)}
-    p{margin:.5rem 0 1rem;color:var(--muted);font-size:clamp(.95rem,2.8vw,1.05rem);line-height:1.6}
-    a{color:var(--fg);text-decoration:none}
-    .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-    /* Header */
-    .header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);border-bottom:1px solid #141414}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:800}
-    .logo span{color:#000;font-family:'Unbounded';}
-    .brand h3{font-weight:800;letter-spacing:.5px;font-size:1rem}
-    .desktop{display:none}
-    .hamb{appearance:none;border:1px solid #2a2a2a;background:#0b0b0b;color:#fff;border-radius:12px;padding:10px 12px;font-weight:700}
-    .nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#000;font-weight:800;border-radius:999px;padding:14px 18px;min-height:44px;border:2px solid transparent;transition:.2s}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,26,26,.25)}
-    .btn:active{transform:translateY(0)}
-    .btn-outline{background:transparent;color:var(--fg);border-color:#2a2a2a}
-    .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
-    /* Hero */
-    .hero{position:relative;overflow:hidden}
-    .hero .wrap{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:42px 0}
-    .tag{display:inline-flex;align-items:center;gap:8px;background:#0f0f10;border:1px solid #1a1a1a;border-radius:999px;padding:6px 12px;color:var(--muted);font-weight:600}
-    .glow{position:absolute;inset:0;pointer-events:none}
-    .glow::before{content:"";position:absolute;width:90vmax;height:90vmax;background:radial-gradient(circle at 50% 50%,rgba(255,26,26,.2),rgba(255,26,26,0) 60%);filter:blur(30px);top:-20vmax;left:-20vmax;opacity:.9}
-    .glow::after{content:"";position:absolute;width:70vmax;height:70vmax;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.05),transparent 60%);filter:blur(20px);bottom:-10vmax;right:-10vmax}
-    .hero-card{background:linear-gradient(180deg,#0b0b0c,#090909);border:1px solid #161616;border-radius:var(--radius);padding:16px}
-    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-    .tile{background:#0d0d0e;border:1px solid #151515;border-radius:14px;padding:12px}
-    .chip{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:#d9d9d9}
-    .chip svg{width:18px;height:18px}
-    /* Sections */
-    section{padding:48px 0;border-top:1px solid #121212}
-    .grid{display:grid;gap:18px}
-    .cols-3{grid-template-columns:1fr}
-    .cols-2{grid-template-columns:1fr}
-    @media (min-width: 960px){
-      .desktop{display:block}
-      .hamb{display:none}
-      .hero .wrap{grid-template-columns:1.1fr .9fr}
-      .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-      .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    body{min-height:100vh;background:var(--bg);color:var(--fg);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+
+    /* background */
+    .cyber-grid{position:fixed;inset:0;z-index:-3;background-image:
+      linear-gradient(rgba(255,0,64,.03) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,0,64,.03) 1px,transparent 1px);
+      background-size:50px 50px;animation:gridMove 10s linear infinite}
+    @keyframes gridMove{0%{transform:translate(0,0)}100%{transform:translate(50px,50px)}}
+    .particles{position:fixed;inset:0;z-index:-2;pointer-events:none}
+    .particle{position:absolute;width:2px;height:2px;background:var(--red);border-radius:50%;box-shadow:0 0 10px var(--red-glow);animation:particleFloat 20s infinite linear}
+    @keyframes particleFloat{0%{transform:translateY(100vh) translateX(0);opacity:0}10%,90%{opacity:1}100%{transform:translateY(-100vh) translateX(100px);opacity:0}}
+    .fluid-container{position:fixed;inset:0;z-index:-1;pointer-events:none;filter:blur(100px);opacity:.7}
+    .orb{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--red) 0%,transparent 70%);animation:orbFloat 15s ease-in-out infinite}
+    .orb1{width:520px;height:520px;top:-260px;left:-260px;animation-duration:20s}
+    .orb2{width:680px;height:680px;right:-340px;bottom:-340px;animation-duration:25s;animation-delay:-5s}
+    .orb3{width:420px;height:420px;top:50%;left:50%;transform:translate(-50%,-50%);animation-duration:30s;animation-delay:-10s}
+    @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(90px,-40px) scale(1.08)}50%{transform:translate(-40px,90px) scale(.94)}75%{transform:translate(-90px,-90px) scale(1.03)}}
+
+    /* type */
+    h1,h2,h3,h4{font-family:'Orbitron',monospace;font-weight:700;line-height:1.2;text-transform:uppercase;letter-spacing:.02em}
+    h1{font-size:clamp(2.2rem,7vw,5.2rem);font-weight:900;background:linear-gradient(135deg,#fff,var(--red),#fff);background-size:200% 200%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:gradientShift 3s ease infinite}
+    @keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    h2{font-size:clamp(1.4rem,4vw,2.6rem);margin-bottom:1rem}
+    h3{font-size:clamp(1.15rem,3vw,1.8rem);margin-bottom:.75rem}
+    p{color:var(--muted)}
+    .highlight{color:var(--red);font-weight:700;text-shadow:0 0 18px var(--red-glow)}
+
+    /* layout */
+    .container{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+    section{padding:80px 0;position:relative}
+    .section-title{text-align:center;margin-bottom:2.25rem}
+    .grid{display:grid;gap:1.25rem}
+    .grid-2{grid-template-columns:1fr}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+    .card{background:var(--glass-heavy);backdrop-filter:blur(20px);border:1px solid var(--red-subtle);border-radius:var(--radius);padding:1.25rem;transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(255,0,64,.18)}
+    .card-badge{display:inline-block;background:linear-gradient(135deg,var(--red),var(--red-light));color:#000;padding:.4rem .8rem;border-radius:40px;font-size:.7rem;font-weight:900;letter-spacing:.1em;margin-bottom:.75rem}
+
+    /* header */
+    header{position:fixed;inset:0 auto auto 0;right:0;z-index:1000;background:var(--glass-heavy);backdrop-filter:blur(18px) saturate(180%);border-bottom:1px solid var(--red-subtle);transition:background .25s ease, box-shadow .25s ease}
+    header.scrolled{background:rgba(0,0,0,.95);box-shadow:0 18px 36px rgba(255,0,64,.18)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-block:10px}
+    .logo-wrapper{display:flex;align-items:center;gap:.75rem;color:inherit;text-decoration:none}
+    .brand-logo{display:block;height:40px;width:auto}
+    .brand-name{font-size:1rem}
+    .nav-menu{display:none;list-style:none;gap:1.25rem;align-items:center}
+    .nav-menu a{color:var(--muted);text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.85rem;position:relative}
+    .nav-menu a:hover{color:var(--fg)}
+    .nav-menu .cta{padding:.55rem 1rem;border:2px solid var(--red);border-radius:14px;background:var(--glass);color:var(--red);font-weight:800}
+    .nav-menu .cta:hover{background:var(--red);color:#000}
+    .menu-toggle{width:46px;height:46px;border-radius:14px;background:var(--glass);border:1px solid var(--red-subtle);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer}
+    .menu-toggle span{width:22px;height:2px;background:var(--red)}
+
+    /* mobile menu */
+    .mobile-menu{position:fixed;inset:0;background:rgba(0,0,0,.98);backdrop-filter:blur(20px);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s ease}
+    .mobile-menu.active{opacity:1;pointer-events:auto}
+    .mobile-menu-close{position:absolute;top:1.25rem;right:1.25rem;width:48px;height:48px;border-radius:50%;border:0;background:var(--red);color:#000;font-size:2rem;cursor:pointer}
+    .mobile-menu ul{list-style:none;text-align:center}
+    .mobile-menu li{margin:1.25rem 0}
+    .mobile-menu a{color:var(--fg);font-family:'Orbitron',monospace;font-weight:800;text-decoration:none;font-size:1.6rem}
+    .mobile-cta{margin-top:1.2rem;display:inline-flex;padding:.7rem 1.1rem;border-radius:16px;border:2px solid var(--red);background:var(--glass);color:var(--red);font-weight:900;text-transform:uppercase;font-size:clamp(0.95rem,3.6vw,1.05rem)}
+    .mobile-cta:hover{background:var(--red);color:#000}
+
+    /* hero */
+    .hero{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:110px 0 70px}
+    .hero-content{display:grid;gap:1.5rem}
+    .hero-text{text-align:center}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--glass);border:1px solid var(--red-subtle);border-radius:40px;padding:.6rem 1.1rem;margin-bottom:1rem}
+    .hero-subtitle{font-size:clamp(1.05rem,2.6vw,1.35rem);color:#fff;margin-top:.25rem}
+    .hero-media{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--red-subtle);background:var(--glass);aspect-ratio:16/9}
+    .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .4s ease}
+    .hero-slide.active{opacity:1}
+    .hero-slide img{width:100%;height:100%;object-fit:cover}
+    .hero-controls{position:absolute;inset:auto 0 0 0;display:flex;gap:.4rem;justify-content:center;padding:.5rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.45))}
+    .hero-dot{width:10px;height:10px;border-radius:50%;background:#999;cursor:pointer;border:1px solid #000}
+    .hero-dot.active{background:#fff}
+
+    /* time grid */
+    .time-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1rem}
+    .time-card{background:var(--glass);border:1px solid var(--red-subtle);border-radius:16px;padding:.9rem;display:flex;align-items:center;gap:.8rem}
+    .time-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--red),var(--red-light))}
+    .time-icon svg{width:18px;height:18px;fill:#000}
+
+    /* menu items */
+    .menu-item{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--red-subtle)}
+    .menu-item:last-child{border-bottom:none}
+    .menu-item h4{font-family:'Space Grotesk',sans-serif;font-weight:700;text-transform:none;margin-bottom:.2rem}
+    .menu-item p{font-size:.9rem;margin:0}
+    .price{color:var(--red);font-weight:800}
+
+    /* gallery */
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+    .gallery-item{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:1}
+    .gallery-item:first-child{grid-column:span 2;aspect-ratio:2/1}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+    .gallery-item:hover img{transform:scale(1.06)}
+    .credit{position:absolute;left:.6rem;bottom:.6rem;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);padding:.25rem .5rem;border-radius:10px;font-size:.7rem}
+    .credit a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.6)}
+    .source-note{margin-top:.75rem;text-align:center;font-size:.85rem;color:var(--muted)}
+
+    /* map */
+    .map-wrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--red-subtle);background:var(--glass)}
+    .map-wrap iframe{width:100%;height:360px;border:0}
+
+    /* whatsapp fab */
+    .whatsapp-float{position:fixed;right:1.2rem;bottom:1.2rem;z-index:900;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;text-decoration:none;background:linear-gradient(135deg,var(--red),var(--red-light));box-shadow:0 10px 28px var(--red-glow)}
+    .whatsapp-float svg{width:28px;height:28px;display:block}
+
+    /* footer */
+    footer{background:var(--bg-dark);border-top:1px solid var(--red-subtle);padding:2.2rem 0;text-align:center}
+
+    /* reveal */
+    .reveal{opacity:0;transform:translateY(24px);transition:all .6s cubic-bezier(.4,0,.2,1)}
+    .reveal.active{opacity:1;transform:translateY(0)}
+
+    /* responsive */
+    @media (max-width: 560px){
+      .time-grid{grid-template-columns:1fr}
+      .hero-text{text-align:center}
+      .gallery{grid-template-columns:1fr}
+      .gallery-item:first-child{grid-column:span 1;aspect-ratio:1}
+      .map-wrap iframe{height:300px}
     }
-    .card{background:var(--card);border:1px solid #161616;border-radius:var(--radius);padding:16px}
-    .badge{display:inline-block;font-size:.8rem;background:rgba(255,26,26,.12);color:var(--accent);border:1px solid rgba(255,26,26,.35);padding:6px 10px;border-radius:999px;font-weight:700}
-    .menu-item{display:flex;gap:14px;align-items:flex-start;justify-content:space-between}
-    .menu-item h4{margin:0}
-    .price{color:var(--accent);font-weight:800}
-    .time{color:var(--muted);font-weight:600}
-    /* Events */
-    .event{display:flex;gap:14px;align-items:center;justify-content:space-between}
-    .event strong{color:#fff}
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .gallery figure{margin:0}
-    .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;border:1px solid #171717}
-    .gallery .tall{grid-column:span 2}
-    figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
-    /* CTA Bar */
-    .cta{position:sticky;bottom:12px;z-index:40}
-    .cta .bar{max-width:var(--max);margin:0 auto;display:flex;gap:10px;justify-content:center}
-    .cta .bar .btn{padding:12px 18px}
-    /* Footer */
-    footer{padding:32px 0;border-top:1px solid #121212;color:var(--muted)}
-    footer a{color:var(--muted)}
+    @media (min-width: 768px){
+      .nav-menu{display:flex}
+      .menu-toggle{display:none}
+      .hero-content{grid-template-columns:1.2fr .8fr;align-items:center}
+      .hero-text{text-align:left}
+      .grid-2{grid-template-columns:repeat(2,1fr)}
+    }
   </style>
-  <script>
-    // Smooth close of mobile nav (basic)
-    function toggleNav(){
-      const m = document.getElementById('mobile');
-      m.hidden = !m.hidden;
-    }
-  </script>
-  <!-- Schema.org: LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "17/19 Urban Bistrot",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via di Santa Costanza 17/19",
-      "addressLocality": "Roma",
-      "postalCode": "00198",
-      "addressCountry": "IT"
-    },
-    "telephone": "+39 06 0000 1719",
-    "servesCuisine": ["Colazione", "Italiana", "Fusion", "Cocktail Bar"],
-    "priceRange": "€€",
-    "openingHoursSpecification": [
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"02:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"03:00"}
-    ],
-    "url": "https://example.com/1719",
-    "sameAs": []
-  }
-  </script>
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="#" class="brand" aria-label="Homepage 17/19 Urban Bistrot">
-        <div class="logo" aria-hidden="true"><span>17</span></div>
-        <h3>17/19 Urban Bistrot</h3>
-      </a>
-      <nav class="desktop" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="#about">Chi siamo</a></li>
+  <!-- Loader -->
+  <div class="loading-screen" id="loader"><div class="loader" aria-label="Caricamento"></div></div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Backgrounds -->
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="fluid-container" aria-hidden="true">
+    <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav aria-label="Principale">
+        <a href="#" class="logo-wrapper" aria-label="Home 17/19 Urban Bistrot">
+          <!-- LOGO UFFICIALE -->
+          <img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0887/8332/3459/files/1719logobianco.svg?v=1755104086" alt="Logo 17/19 Urban Bistrot" />
+          <div class="brand-name">17/19 Urban Bistrot</div>
+        </a>
+
+        <ul class="nav-menu" id="desktopMenu">
+          <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#cocktail">Cocktail</a></li>
           <li><a href="#events">Eventi</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#visit">Visitarci</a></li>
+          <li><a href="#contact">Contatti</a></li>
+          <!-- PRENOTA SPOSTATO NEL MENÙ (desktop) -->
+          <li><a class="cta" href="https://wa.me/393298252092?text=Ciao%2017%2F19%20Urban%20Bistrot%2C%20vorrei%20prenotare" target="_blank" rel="noopener noreferrer">Prenota</a></li>
         </ul>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Apri/chiudi menu mobile">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
-      <div style="display:flex;gap:10px;align-items:center">
-        <a href="#prenota" class="btn">Prenota ora</a>
-        <button class="hamb" onclick="toggleNav()" aria-controls="mobile" aria-expanded="false" aria-label="Apri menu">☰</button>
-      </div>
-    </div>
-    <div id="mobile" class="container" hidden>
-      <div class="card" style="margin:0 0 14px">
-        <div style="display:grid;gap:12px">
-          <a href="#about" onclick="toggleNav()">Chi siamo</a>
-          <a href="#menu" onclick="toggleNav()">Menu</a>
-          <a href="#cocktail" onclick="toggleNav()">Cocktail</a>
-          <a href="#events" onclick="toggleNav()">Eventi</a>
-          <a href="#gallery" onclick="toggleNav()">Gallery</a>
-          <a href="#visit" onclick="toggleNav()">Visitarci</a>
-        </div>
-      </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="glow" aria-hidden="true"></div>
-      <div class="container wrap">
-        <div>
-          <span class="tag">Roma • Quartiere Trieste • Via di Santa Costanza 17/19</span>
-          <h1>Colazioni, pranzi, cene & cocktail. <span style="color:var(--accent)">DJ set techno</span> suonato in vinile.</h1>
-          <p>Un urban bistrot contemporaneo: cucina all‑day, drink list signature e una consolle dedicata ai vinili. Ogni weekend ospitiamo DJ resident e special guest per set profondi e danzerecci.</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-            <a href="#prenota" class="btn" aria-label="Prenota un tavolo al 17/19">Prenota un tavolo</a>
-            <a href="#events" class="btn btn-outline" aria-label="Vai alla sezione eventi">Eventi & Line‑up</a>
-          </div>
-          <div class="hero-grid">
-            <div class="tile">
-              <div class="chip">🍳 Colazioni tutti i giorni <span class="time">8:00–12:00</span></div>
-              <div class="chip">🥗 Pranzo smart <span class="time">12:00–15:00</span></div>
-            </div>
-            <div class="tile">
-              <div class="chip">🍝 Cena contemporanea <span class="time">19:00–23:30</span></div>
-              <div class="chip">🍸 Cocktail & DJ set <span class="time">22:00–02:00</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-card">
-          <h2 style="margin-bottom:10px">Questa settimana</h2>
-          <div class="grid cols-2">
-            <div class="card">
-              <span class="badge">VINYL ONLY</span>
-              <h3>Venerdì • Techno Grooves</h3>
-              <p>Resident DJ set su vinile. Deep, Minimal, Raw.</p>
-              <p class="time">Dalle 22:30</p>
-            </div>
-            <div class="card">
-              <span class="badge">SPECIAL GUEST</span>
-              <h3>Sabato • Acid Night</h3>
-              <p>Guest DJ + warm‑up in apertura. Dancefloor vibes assicurate.</p>
-              <p class="time">Dalle 22:30</p>
-            </div>
-          </div>
-          <div style="display:flex;gap:10px;margin-top:10px">
-            <a class="btn" href="#events">Scopri la line‑up</a>
-            <a class="btn btn-outline" href="#prenota">Prenota lista</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container grid cols-2">
-        <div>
-          <h2>Urban Bistrot. Vibrazioni techno.</h2>
-          <p>17/19 nasce nel cuore di Roma come spazio fluido: al mattino profumo di specialty coffee e bakery; a pranzo piatti veloci e curati; la sera cucina contemporanea e cocktail list firmata. Quando cala il buio, la nostra cabina in vinile prende vita: DJ set selezionati, sound system calibrato, luci minimal.</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-            <span class="badge">Caffetteria Specialty</span>
-            <span class="badge">Cucina All‑Day</span>
-            <span class="badge">Signature Cocktail</span>
-            <span class="badge">DJ Set in Vinile</span>
-          </div>
-        </div>
-        <div class="card">
-          <h3 style="margin-bottom:8px">Orari di apertura</h3>
-          <div class="grid cols-2">
-            <div>
-              <p><strong>Lun–Ven</strong><br><span class="time">08:00 – 02:00</span></p>
-              <p><strong>Sab</strong><br><span class="time">09:00 – 03:00</span></p>
-            </div>
-            <div>
-              <p><strong>Dom</strong><br><span class="time">09:00 – 03:00</span></p>
-              <p><strong>Cucina</strong><br><span class="time">12:00 – 15:00 • 19:00 – 23:30</span></p>
-            </div>
-          </div>
-          <p style="margin-top:4px">Ultima chiamata cocktail: <span class="time">30 min</span> prima della chiusura.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MENU -->
-    <section id="menu">
-      <div class="container">
-        <h2>Menu</h2>
-        <p>Una selezione che cambia con le stagioni. Ecco un assaggio.</p>
-        <div class="grid cols-3" style="margin-top:10px">
-          <div class="card">
-            <h3>Colazioni</h3>
-            <div class="menu-item"><div><h4>Cornetto alla crema</h4><p>Burro, lievitazione lenta, crema pasticciera.</p></div><div class="price">€2,00</div></div>
-            <div class="menu-item"><div><h4>Toast Avocado & Uovo</h4><p>Pane rustico, avocado, uovo in camicia, lime.</p></div><div class="price">€8,50</div></div>
-            <div class="menu-item"><div><h4>Pancake Frutti Rossi</h4><p>Sciroppo d'acero, yogurt greco.</p></div><div class="price">€9,00</div></div>
-          </div>
-          <div class="card">
-            <h3>Pranzo</h3>
-            <div class="menu-item"><div><h4>Caesar Urban</h4><p>Pollo grigliato, crostini, dressing leggero.</p></div><div class="price">€11,00</div></div>
-            <div class="menu-item"><div><h4>Club Sandwich 17/19</h4><p>Pane tostato, tacchino, bacon, lattuga, pomodoro.</p></div><div class="price">€12,50</div></div>
-            <div class="menu-item"><div><h4>Pasta del Giorno</h4><p>Selezione dello chef.</p></div><div class="price">€13,00</div></div>
-          </div>
-          <div class="card">
-            <h3>Cena</h3>
-            <div class="menu-item"><div><h4>Polpo alla Piastra</h4><p>Crema di patate affumicate, crumble di olive.</p></div><div class="price">€18,00</div></div>
-            <div class="menu-item"><div><h4>Risotto Rosso</h4><p>Barbabietola, caprino, limone candito.</p></div><div class="price">€17,00</div></div>
-            <div class="menu-item"><div><h4>Burger Black</h4><p>Pane al carbone, cheddar, cipolla caramellata.</p></div><div class="price">€15,00</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COCKTAIL -->
-    <section id="cocktail">
-      <div class="container grid cols-2">
-        <div>
-          <h2>Cocktail Signature</h2>
-          <p>Classici eseguiti a regola d'arte e creazioni originali ispirate alla cultura techno.</p>
-          <div class="card">
-            <div class="menu-item"><div><h4>Vinyl Negroni</h4><p>Gin, bitter, vermouth rosso, affumicatura al momento.</p></div><div class="price">€10</div></div>
-            <div class="menu-item"><div><h4>Minimal Mule</h4><p>Vodka, lime, ginger beer, menta.</p></div><div class="price">€9</div></div>
-            <div class="menu-item"><div><h4>Acid 303</h4><p>Tequila, agrumi, bitter al pompelmo, sale nero.</p></div><div class="price">€11</div></div>
-            <div class="menu-item"><div><h4>Blackout Spritz</h4><p>Bitter scuro, prosecco, soda, twist di arancia.</p></div><div class="price">€8</div></div>
-          </div>
-        </div>
-        <div class="card" aria-label="Callout DJ set">
-          <span class="badge">VINYL DJ BOOTH</span>
-          <h3>Consolle in vinile</h3>
-          <p>Gireranno solo dischi. Dal warm‑up alle ore piccole, selezioni curate tra deep, dub e acid techno. Impianto audio calibrato per un suono pieno e pulito.</p>
-          <p class="time">Line‑up aggiornata ogni settimana.</p>
-          <a href="#events" class="btn">Vai agli eventi</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section id="events">
-      <div class="container">
-        <h2>Eventi • Line‑up</h2>
-        <p>DJ set techno suonato in vinile. Prenota la tua lista per ingresso prioritario.</p>
-        <div class="grid cols-3" style="margin-top:10px">
-          <div class="card event">
-            <div>
-              <span class="badge">Venerdì</span>
-              <h3>Techno Grooves</h3>
-              <p class="time">Start 22:30 • Resident DJ</p>
-            </div>
-            <a class="btn" href="#prenota">Lista</a>
-          </div>
-          <div class="card event">
-            <div>
-              <span class="badge">Sabato</span>
-              <h3>Acid Night</h3>
-              <p class="time">Start 22:30 • Special Guest</p>
-            </div>
-            <a class="btn" href="#prenota">Lista</a>
-          </div>
-          <div class="card event">
-            <div>
-              <span class="badge">Domenica</span>
-              <h3>After Brunch Vibes</h3>
-              <p class="time">16:00 – 20:00 • Downtempo & House</p>
-            </div>
-            <a class="btn" href="#prenota">Lista</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-      <div class="container">
-        <h2>Gallery</h2>
-        <p>Immagini del locale (fonte: 17/19 Cocktail Bar su TripAdvisor e Facebook). In produzione sostituiremo con scatti proprietari.</p>
-        <div class="gallery" aria-label="Galleria immagini 17/19">
-          <figure class="tall">
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g187791-d4799462-Reviews-17_19_Bar-Rome_Lazio.html" target="_blank" rel="noopener">
-              <img loading="lazy" alt="Cocktail in barattolo – 17/19 Bar" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c76d4?q=80&w=1200&auto=format&fit=crop">
-            </a>
-            <figcaption>17/19 Bar – Roma (link a TripAdvisor)</figcaption>
-          </figure>
-          <figure>
-            <a href="https://www.tripadvisor.com/LocationPhotoDirectLink-g187791-d4799462-i480860248-17_19_Bar-Rome_Lazio.html" target="_blank" rel="noopener">
-              <img loading="lazy" alt="Interni industrial – 17/19" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=900&auto=format&fit=crop">
-            </a>
-            <figcaption>Interni – fonte TripAdvisor</figcaption>
-          </figure>
-          <figure>
-            <a href="https://www.facebook.com/p/1719-Cocktail-Bar-Bistrot-100077668764198/" target="_blank" rel="noopener">
-              <img loading="lazy" alt="Bancone cocktail – 17/19" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=900&auto=format&fit=crop">
-            </a>
-            <figcaption>Bancone – pagina Facebook ufficiale</figcaption>
-          </figure>
-          <figure>
-            <a href="https://www.instagram.com/1719_cocktailbar/" target="_blank" rel="noopener">
-              <img loading="lazy" alt="Aperitivo – 17/19" src="https://images.unsplash.com/photo-1541343672885-9be56236302a?q=80&w=900&auto=format&fit=crop">
-            </a>
-            <figcaption>Feed Instagram @1719_cocktailbar</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- VISIT -->
-    <section id="visit">
-      <div class="container grid cols-2">
-        <div>
-          <h2>Vieni a trovarci</h2>
-          <p><strong>Indirizzo</strong><br>Via di Santa Costanza 17/19, 00198 Roma (RM)</p>
-          <p><strong>Prenotazioni</strong><br><a href="tel:+390600001719">+39 06 0000 1719</a> • <a href="mailto:booking@1719bistrot.it">booking@1719bistrot.it</a></p>
-          <p><strong>Social</strong><br><a href="#">Instagram</a> • <a href="#">Facebook</a> • <a href="#">TikTok</a></p>
-          <div id="prenota" class="card" style="margin-top:10px">
-            <h3>Prenota un tavolo o la lista</h3>
-            <form action="mailto:booking@1719bistrot.it" method="post" enctype="text/plain">
-              <div class="grid cols-2">
-                <label>Nome e Cognome<br><input required name="nome" placeholder="Il tuo nome" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
-                <label>Telefono<br><input required name="telefono" placeholder="Es. +39 3xx xxx xxxx" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
-              </div>
-              <div class="grid cols-2">
-                <label>Data<br><input type="date" name="data" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
-                <label>Persone<br><input type="number" min="1" max="20" name="persone" placeholder="2" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
-              </div>
-              <label>Note<br><textarea name="note" rows="4" placeholder="Allergie, orario preferito, tavolo..." style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></textarea></label>
-              <div style="display:flex;gap:10px;margin-top:10px">
-                <button type="submit" class="btn">Invia richiesta</button>
-                <a class="btn btn-outline" href="tel:+390600001719">Chiama</a>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Mappa</h3>
-          <p class="time">Quartiere Trieste – collegato con metro B1 (S. Agnese/Annibaliano)</p>
-          <div style="overflow:hidden;border-radius:14px;border:1px solid #171717">
-            <iframe title="Mappa 17/19 Urban Bistrot" src="https://www.google.com/maps?q=Via%20di%20Santa%20Costanza%2017%2F19%2C%2000198%20Roma&output=embed" width="100%" height="320" style="border:0"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="cta" aria-hidden="false">
-    <div class="bar">
-      <a href="#prenota" class="btn">Prenota ora</a>
-      <a href="#events" class="btn btn-outline">Eventi</a>
-    </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="menuClose" aria-label="Chiudi menu">&times;</button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#cocktail">Cocktail</a></li>
+      <li><a href="#events">Eventi</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+    <!-- CTA PRENOTA (mobile) -->
+    <a class="mobile-cta" href="https://wa.me/393298252092?text=Ciao%2017%2F19%20Urban%20Bistrot%2C%20vorrei%20prenotare" target="_blank" rel="noopener noreferrer">Prenota su WhatsApp</a>
   </div>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <div>
-        <strong>17/19 Urban Bistrot</strong>
-        <p>Via di Santa Costanza 17/19, 00198 Roma • P.IVA 00000000000</p>
-      </div>
-      <div>
-        <a href="#">Privacy</a> • <a href="#">Cookie</a> • <a href="#">Termini</a>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7z"/></svg>
+            <span>Roma • Via di Santa Costanza 17/19</span>
+          </div>
+          <h1>Techno • Vinile • Food</h1>
+          <p class="hero-subtitle">
+            Urban bistrot: colazioni, pranzi, cene & cocktail signature. <br />
+            <strong class="highlight">DJ set in vinile curated by Riccardo Battaglia</strong>
+          </p>
+
+          <!-- CAROSELLO HERO (foto DJ set in vinile) -->
+          <div class="hero-media" id="heroCarousel" aria-label="Carosello foto DJ set">
+            <!-- slides generate via JS -->
+            <div class="hero-controls" id="heroDots" aria-hidden="true"></div>
+          </div>
+
+          <div style="display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:1rem">
+            <a class="mobile-cta" href="#events">Eventi & DJ Set</a>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="Orari ed eventi">
+          <h2>Orari & Eventi</h2>
+          <div class="time-grid">
+            <div class="time-card"><div class="time-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14" stroke="#000" stroke-width="2" fill="none"/></svg>
+            </div><div><strong>Colazioni</strong><br /><span style="color:var(--muted)">08:00 - 12:00</span></div></div>
+
+            <div class="time-card"><div class="time-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            </div><div><strong>Pranzo</strong><br /><span style="color:var(--muted)">12:00 - 15:00</span></div></div>
+
+            <div class="time-card"><div class="time-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9c1.5 0 2.9.4 4.1 1l-.8 1.4A7 7 0 0 0 12 5a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7h2z"/></svg>
+            </div><div><strong>Cena</strong><br /><span style="color:var(--muted)">19:00 - 23:30</span></div></div>
+
+            <div class="time-card"><div class="time-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" fill="none" stroke="#000" stroke-width="2"/></svg>
+            </div><div><strong>DJ Set</strong><br /><span style="color:var(--muted)">22:00 - 02:00</span></div></div>
+          </div>
+
+          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--red-subtle)">
+            <div class="card-badge">Weekend</div>
+            <h3>Techno Vibes • Solo vinile</h3>
+            <p>DJ set a cura di <span class="highlight">Riccardo Battaglia</span></p>
+            <p style="color:var(--red);font-weight:700">Start: 22:30</p>
+          </div>
+        </aside>
       </div>
     </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="reveal">
+          <h2>Urban Bistrot <br /><span class="highlight">Cultura Techno</span></h2>
+          <p style="font-size:1.1rem;color:#fff;margin:.8rem 0 1rem">
+            17/19 è un urban bistrot nel cuore di Roma. Di giorno specialty coffee e cucina contemporanea.
+            Di notte la consolle prende vita con DJ set techno su vinile.
+          </p>
+          <p style="font-size:1.05rem">Line-up <strong class="highlight">a cura di Riccardo Battaglia</strong>. Deep, minimal, acid.</p>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.2rem">
+            <span class="card-badge">Specialty Coffee</span>
+            <span class="card-badge">Cucina All-Day</span>
+            <span class="card-badge">Cocktail Signature</span>
+            <span class="card-badge">Vinyl DJ Set</span>
+          </div>
+        </div>
+
+        <div class="card reveal" aria-label="Orari apertura">
+          <h3>Orari di Apertura</h3>
+          <div style="margin-top:1rem;display:grid;gap:.75rem">
+            <div style="display:flex;justify-content:space-between"><span>Lunedì</span><span class="highlight">Chiuso</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Mar - Gio</span><span class="highlight">08:00 - 01:00</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Venerdì - Sabato</span><span class="highlight">08:00 - 02:00</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Domenica</span><span class="highlight">08:00 - 01:00</span></div>
+          </div>
+          <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--red-subtle)">
+            <h4>Servizio Cucina</h4>
+            <p>Pranzo: 12:00 - 15:00</p>
+            <p>Cena: 19:00 - 23:30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Menu</h2>
+        <p style="font-size:1.05rem">Dalla colazione al dopo cena. Selezione stagionale.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="card-badge">Breakfast</div><h3>Colazioni</h3>
+          <div class="menu-item"><div><h4>Cornetto Artigianale</h4><p>Crema, marmellata, vuoto</p></div><div class="price">€2</div></div>
+          <div class="menu-item"><div><h4>Avocado Toast</h4><p>Uovo poché, lime, pepe rosa</p></div><div class="price">€9</div></div>
+          <div class="menu-item"><div><h4>Pancake Stack</h4><p>Sciroppo d'acero, frutti rossi</p></div><div class="price">€8</div></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-badge">Lunch</div><h3>Pranzo</h3>
+          <div class="menu-item"><div><h4>Caesar Salad</h4><p>Pollo grigliato, crostini, parmigiano</p></div><div class="price">€12</div></div>
+          <div class="menu-item"><div><h4>Club Sandwich</h4><p>Tacchino, bacon, pomodoro</p></div><div class="price">€13</div></div>
+          <div class="menu-item"><div><h4>Pasta del Giorno</h4><p>Chiedi al nostro staff</p></div><div class="price">€14</div></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-badge">Dinner</div><h3>Cena</h3>
+          <div class="menu-item"><div><h4>Polpo Grigliato</h4><p>Patate, olive, pomodorini</p></div><div class="price">€18</div></div>
+          <div class="menu-item"><div><h4>Black Burger</h4><p>Pane al carbone, cheddar, bacon</p></div><div class="price">€16</div></div>
+          <div class="menu-item"><div><h4>Risotto Techno</h4><p>Nero di seppia, lime, gamberi</p></div><div class="price">€17</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cocktail -->
+  <section id="cocktail">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="reveal">
+          <h2>Cocktail <br /><span class="highlight">Signature</span></h2>
+          <p style="font-size:1.05rem;margin-bottom:1rem">Drink list ispirata alla cultura techno. Classici rivisitati e creazioni originali.</p>
+          <div class="card">
+            <div class="menu-item"><div><h4>Vinyl Negroni</h4><p>Gin, bitter, vermouth, affumicatura</p></div><div class="price">€10</div></div>
+            <div class="menu-item"><div><h4>303 Acid</h4><p>Tequila, lime, sale nero</p></div><div class="price">€11</div></div>
+            <div class="menu-item"><div><h4>Minimal Mule</h4><p>Vodka, ginger beer, menta</p></div><div class="price">€9</div></div>
+            <div class="menu-item"><div><h4>Dark Spritz</h4><p>Bitter scuro, prosecco, soda</p></div><div class="price">€8</div></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-badge">Vinyl Only</div>
+          <h3>Consolle DJ</h3>
+          <p style="font-size:1rem;margin-bottom:1rem">Consolle professionale. Sound system calibrato.</p>
+          <p style="margin-bottom:1rem"><strong class="highlight">DJ set in vinile curated by Riccardo Battaglia</strong></p>
+
+          <!-- PROSSIMI EVENTI — MODIFICA SOLO QUESTO ARRAY IN FONDO AL FILE -->
+          <div style="border-top:1px solid var(--red-subtle);padding-top:1rem">
+            <h4>Prossimi Eventi</h4>
+            <ul id="eventList" style="list-style:none;margin-top:.6rem"></ul>
+          </div>
+
+          <a class="mobile-cta" style="width:100%;margin-top:1rem;text-align:center" href="https://wa.me/393298252092?text=Ciao%2017%2F19%20Urban%20Bistrot%2C%20vorrei%20info%20sugli%20eventi" target="_blank" rel="noopener noreferrer">Info Eventi su WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Eventi <span class="highlight">Techno</span></h2>
+        <p style="font-size:1.05rem">DJ set su vinile a cura di <strong class="highlight">Riccardo Battaglia</strong></p>
+      </div>
+
+      <div class="grid grid-3" id="eventCards"><!-- popolato da JS con gli stessi dati di 'prossimiEventi' --></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Gallery</h2>
+        <p>Altre foto su <a class="highlight" href="https://instagram.com/1719_cocktailbar" target="_blank" rel="noopener noreferrer">@1719_cocktailbar</a></p>
+      </div>
+
+      <div class="gallery reveal" id="galleryGrid" aria-live="polite"></div>
+      <p class="source-note">Le immagini sono caricate da fonti pubbliche ed accreditate con link alla fonte originale.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="reveal">
+          <h2>Contatti</h2>
+
+          <div style="margin:1.2rem 0">
+            <h4 class="highlight">Indirizzo</h4>
+            <p>Via di Santa Costanza 17/19<br/>00198 Roma</p>
+          </div>
+
+          <div style="margin:1.2rem 0">
+            <h4 class="highlight">Prenotazioni</h4>
+            <p>WhatsApp: <a class="highlight" href="https://wa.me/393298252092" target="_blank" rel="noopener noreferrer">+39 329 825 2092</a></p>
+            <p>Email: <a href="mailto:info@1719bistrot.it" style="color:#fff">info@1719bistrot.it</a></p>
+          </div>
+
+          <div style="margin:1.2rem 0">
+            <h4 class="highlight">Social</h4>
+            <p>
+              <a href="https://instagram.com/1719_cocktailbar" target="_blank" rel="noopener noreferrer" style="color:#fff">Instagram</a> •
+              <a href="https://www.facebook.com/p/1719-Cocktail-Bar-Bistrot-100077668764198/" target="_blank" rel="noopener noreferrer" style="color:#fff">Facebook</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal" aria-label="Mappa">
+          <h4 class="highlight">Dove Siamo</h4>
+          <p style="margin:.4rem 0 1rem">Quartiere Trieste – Sant'Agnese/Annibaliano.</p>
+          <div class="map-wrap">
+            <!-- MAPPA EMBED (responsive) -->
+            <iframe
+              title="Mappa 17/19 Urban Bistrot"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=41.9226318,12.5118941&z=16&output=embed">
+            </iframe>
+          </div>
+          <a class="mobile-cta" style="margin-top:1rem;display:inline-flex" href="https://www.google.it/maps/place/17%2F19+Cocktail+Bar/@41.9226318,12.5118941,16z" target="_blank" rel="noopener noreferrer">Apri su Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 17/19 Urban Bistrot Roma. Tutti i diritti riservati.</p>
+    <p style="color:var(--muted);font-size:.9rem">Designed with ♥ in Rome</p>
   </footer>
+
+  <!-- WhatsApp FAB -->
+  <a class="whatsapp-float" href="https://wa.me/393298252092?text=Ciao%2017%2F19%20Urban%20Bistrot" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <!-- Icona WhatsApp pulita (simple-icons-like) -->
+    <svg viewBox="0 0 24 24" aria-hidden="true" role="img">
+      <path fill="#ffffff" d="M20.52 3.48A11.78 11.78 0 0 0 1.64 17.26l-1.32 4.84 4.97-1.3a11.78 11.78 0 0 0 5.64 1.44h.01c6.5 0 11.78-5.28 11.78-11.78 0-3.15-1.23-6.11-3.5-8.38zM12.04 21.1h-.01a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-2.95.77.79-2.88-.24-.38a9.8 9.8 0 1 1 18.12-5.1c0 5.4-4.4 9.79-9.36 9.79zM16.59 14.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.76.96-.93 1.16-.17.2-.35.23-.64.08-.3-.15-1.24-.46-2.36-1.47-.87-.79-1.46-1.76-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.14-.66-1.58-.9-2.18-.24-.58-.5-.5-.68-.51h-.57c-.19 0-.5.07-.76.36s-1 1-1 2.45c0 1.45 1.03 2.87 1.18 3.07.15.2 2.04 3.21 4.98 4.49.7.31 1.25.5 1.68.64.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.24-.7.24-1.3.17-1.44-.06-.13-.25-.2-.57-.36z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Loader
+    window.addEventListener('load', () => {
+      document.getElementById('loader').classList.add('hidden');
+    });
+
+    // Header shadow on scroll
+    const header = document.getElementById('header');
+    const onScrollHeader = () => {
+      if (window.scrollY > 8) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScrollHeader); onScrollHeader();
+
+    // Mobile menu: toggle + chiusura su overlay/spazi vuoti e su link
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose  = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu  = () => mobileMenu.classList.remove('active');
+    const openMenu   = () => mobileMenu.classList.add('active');
+
+    // toggle sull'icona
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+    // bottone chiudi
+    menuClose.addEventListener('click', closeMenu);
+    // clic su overlay/spazi vuoti
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMenu();
+    });
+    // clic su link interni: chiudi senza interferire con la navigazione
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setTimeout(closeMenu, 120); // chiusura leggermente ritardata
+      });
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.88;
+      revealElements.forEach(el => { if (el.getBoundingClientRect().top < trigger) el.classList.add('active'); });
+    };
+    window.addEventListener('scroll', revealOnScroll); revealOnScroll();
+
+    // Cursor glow (desktop)
+    const cursorGlow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', e => {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top  = e.clientY + 'px';
+    });
+
+    // Particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 44; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random()*100 + 'vw';
+      p.style.animationDelay = (Math.random()*18)+'s';
+      p.style.animationDuration = (10 + Math.random()*18)+'s';
+      particlesContainer.appendChild(p);
+    }
+
+    // ===== HERO CAROUSEL =====
+    // AGGIORNA QUI le URL delle immagini (consigliato 1600x900)
+    const heroCarouselImages = [
+      'https://th.bing.com/th/id/R.e481b7e56867d8898eb6d0d1b5cc6401?rik=QTcxu2Yt37sGqg&pid=ImgRaw&r=0',
+      'https://media-cdn.tripadvisor.com/media/photo-s/21/e8/71/95/19-il-nostro-stile-accogliente.jpg',
+      'https://iorampo.com/wp-content/uploads/2024/12/17-19-800x600.jpg'
+    ];
+    const heroCarousel = document.getElementById('heroCarousel');
+    const heroDots = document.getElementById('heroDots');
+    let currentSlide = 0;
+
+    function renderHeroSlides(){
+      heroCarousel.querySelectorAll('.hero-slide').forEach(n=>n.remove());
+      heroDots.innerHTML = '';
+      heroCarouselImages.forEach((src, idx) => {
+        const slide = document.createElement('div');
+        slide.className = 'hero-slide' + (idx===0 ? ' active' : '');
+        const img = document.createElement('img');
+        img.src = src; img.alt = 'DJ set su vinile - slide ' + (idx+1);
+        slide.appendChild(img);
+        heroCarousel.appendChild(slide);
+        const dot = document.createElement('button');
+        dot.className = 'hero-dot' + (idx===0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Vai alla slide ' + (idx+1));
+        dot.addEventListener('click', ()=> goToSlide(idx));
+        heroDots.appendChild(dot);
+      });
+    }
+    function goToSlide(i){
+      const slides = heroCarousel.querySelectorAll('.hero-slide');
+      const dots = heroDots.querySelectorAll('.hero-dot');
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = i;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    function autoSlide(){
+      const slides = heroCarousel.querySelectorAll('.hero-slide');
+      if(!slides.length) return;
+      goToSlide((currentSlide + 1) % slides.length);
+    }
+    renderHeroSlides();
+    setInterval(autoSlide, 5000);
+
+    // ===== PROSSIMI EVENTI =====
+    // COME AGGIORNARE: modifica questo array. I campi sono liberi testo.
+    // { giorno: 'VEN', data: '22 Ago', titolo: 'Techno Grooves', orario: '22:30', note: 'Solo vinile' }
+    const prossimiEventi = [
+      { giorno: 'VEN', data: '22 Ago', titolo: 'Techno Grooves', orario: '22:30', note: 'Solo vinile' },
+      { giorno: 'SAB', data: '23 Ago', titolo: 'Acid Night', orario: '22:30', note: 'Special guest' },
+      { giorno: 'DOM', data: '24 Ago', titolo: 'Minimal Sunday', orario: '16:00', note: 'Downtempo' }
+    ];
+
+    // Rendering lista breve (card "Consolle DJ")
+    const eventList = document.getElementById('eventList');
+    eventList.innerHTML = '';
+    prossimiEventi.forEach(ev => {
+      const li = document.createElement('li');
+      li.style.margin = '.3rem 0';
+      li.innerHTML = `<span class="highlight">${ev.giorno}</span> • ${ev.data} — ${ev.titolo} <span style="color:var(--muted)">(${ev.orario}${ev.note ? ' • ' + ev.note : ''})</span>`;
+      eventList.appendChild(li);
+    });
+
+    // Rendering cards sezione "Eventi"
+    const eventCards = document.getElementById('eventCards');
+    eventCards.innerHTML = '';
+    prossimiEventi.forEach(ev => {
+      const wrap = document.createElement('div');
+      wrap.className = 'card reveal active';
+      wrap.innerHTML = `
+        <div class="card-badge">${ev.giorno} • ${ev.data}</div>
+        <h3>${ev.titolo}</h3>
+        <p>Start ${ev.orario}${ev.note ? ' • ' + ev.note : ''}</p>
+        <p style="margin-bottom:1rem">DJ set su vinile</p>
+        <a class="mobile-cta" style="width:100%;text-align:center" href="https://wa.me/393298252092?text=Lista%20${encodeURIComponent(ev.titolo)}" target="_blank" rel="noopener noreferrer">Entra in Lista</a>
+      `;
+      eventCards.appendChild(wrap);
+    });
+
+    // ===== GALLERY (con crediti) =====
+    const galleryData = [
+      {
+        src: 'https://img3.restaurantguru.com/c493-Pub-and-bar-17-19-interior.jpg',
+        alt: 'Interni del 17/19 Urban Bistrot (sala)',
+        credit: 'Restaurant Guru',
+        href: 'https://restaurantguru.it/1719-LIve-Eat-Drink-Love-Rome'
+      },
+      {
+        src: 'https://img.restaurantguru.com/ccd7-17-19-Stenfields-and-c-Rome-dishes.jpg',
+        alt: 'Piatti al 17/19',
+        credit: 'Restaurant Guru',
+        href: 'https://restaurantguru.it/1719-LIve-Eat-Drink-Love-Rome'
+      },
+      {
+        src: 'https://img3.restaurantguru.com/c467-Pub-and-bar-17-19-Stenfields-and-c-exterior.jpg',
+        alt: 'Banco e scaffali 17/19',
+        credit: 'Restaurant Guru',
+        href: 'https://restaurantguru.it/1719-LIve-Eat-Drink-Love-Rome'
+      }
+    ];
+    const grid = document.getElementById('galleryGrid');
+    galleryData.forEach(g => {
+      const a = document.createElement('a');
+      a.className = 'gallery-item';
+      a.href = g.href; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      const img = document.createElement('img');
+      img.loading = 'lazy'; img.decoding = 'async';
+      img.src = g.src; img.alt = g.alt;
+      const credit = document.createElement('span');
+      credit.className = 'credit';
+      credit.innerHTML = `© <a href="${g.href}" target="_blank" rel="noopener noreferrer">${g.credit}</a>`;
+      a.appendChild(img); a.appendChild(credit);
+      grid.appendChild(a);
+    });
+
+    // ===== FIX LINK ESTERNI (WhatsApp / Google Maps) =====
+    // Apri via window.open per evitare che alcune webview/iframe interrompano la navigazione.
+    document.querySelectorAll('a[target="_blank"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const url = a.href;
+        if (/^https?:/i.test(url)) {
+          e.preventDefault();
+          setTimeout(closeMenu, 120); // se il click arriva dal menu mobile
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
