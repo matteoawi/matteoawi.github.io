@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>17/19 Urban Bistrot – Roma | Colazioni, Pranzi, Cene, Cocktail & DJ Set Techno</title>
+  <meta name="description" content="17/19 Urban Bistrot a Roma (Via di Santa Costanza 17/19): colazioni, pranzi, cene, cocktail signature e musica dal vivo con DJ set techno suonato in vinile." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:title" content="17/19 Urban Bistrot – Roma" />
+  <meta property="og:description" content="Colazioni, pranzi, cene, cocktail e DJ set techno in vinile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff1a1a' font-family='Arial' font-size='80'%3E17/19 Urban Bistrot%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23000'/%3E%3Ctext x='50' y='60' font-size='54' text-anchor='middle' fill='%23ff1a1a' font-family='Arial'%3E17%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg:#000; /* nero */
+      --fg:#f5f5f5;
+      --muted:#bfbfbf;
+      --accent:#ff1a1a; /* rosso primario */
+      --accent-2:#b30f0f; /* rosso profondo */
+      --card:#0d0d0d;
+      --radius:18px;
+      --max:1100px; /* più stretto per mobile */
+      --pad:clamp(14px,3vw,22px);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;scroll-behavior:smooth}
+    img{max-width:100%;height:auto;display:block}
+    h1,h2,h3{font-family:'Unbounded',system-ui,sans-serif;letter-spacing:.5px;margin:0 0 .5rem}
+    h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.05}
+    h2{font-size:clamp(1.4rem,4.5vw,2rem)}
+    p{margin:.5rem 0 1rem;color:var(--muted);font-size:clamp(.95rem,2.8vw,1.05rem);line-height:1.6}
+    a{color:var(--fg);text-decoration:none}
+    .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+    /* Header */
+    .header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);border-bottom:1px solid #141414}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:800}
+    .logo span{color:#000;font-family:'Unbounded';}
+    .brand h3{font-weight:800;letter-spacing:.5px;font-size:1rem}
+    .desktop{display:none}
+    .hamb{appearance:none;border:1px solid #2a2a2a;background:#0b0b0b;color:#fff;border-radius:12px;padding:10px 12px;font-weight:700}
+    .nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#000;font-weight:800;border-radius:999px;padding:14px 18px;min-height:44px;border:2px solid transparent;transition:.2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,26,26,.25)}
+    .btn:active{transform:translateY(0)}
+    .btn-outline{background:transparent;color:var(--fg);border-color:#2a2a2a}
+    .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+    /* Hero */
+    .hero{position:relative;overflow:hidden}
+    .hero .wrap{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:42px 0}
+    .tag{display:inline-flex;align-items:center;gap:8px;background:#0f0f10;border:1px solid #1a1a1a;border-radius:999px;padding:6px 12px;color:var(--muted);font-weight:600}
+    .glow{position:absolute;inset:0;pointer-events:none}
+    .glow::before{content:"";position:absolute;width:90vmax;height:90vmax;background:radial-gradient(circle at 50% 50%,rgba(255,26,26,.2),rgba(255,26,26,0) 60%);filter:blur(30px);top:-20vmax;left:-20vmax;opacity:.9}
+    .glow::after{content:"";position:absolute;width:70vmax;height:70vmax;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.05),transparent 60%);filter:blur(20px);bottom:-10vmax;right:-10vmax}
+    .hero-card{background:linear-gradient(180deg,#0b0b0c,#090909);border:1px solid #161616;border-radius:var(--radius);padding:16px}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .tile{background:#0d0d0e;border:1px solid #151515;border-radius:14px;padding:12px}
+    .chip{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:#d9d9d9}
+    .chip svg{width:18px;height:18px}
+    /* Sections */
+    section{padding:48px 0;border-top:1px solid #121212}
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:1fr}
+    .cols-2{grid-template-columns:1fr}
+    @media (min-width: 960px){
+      .desktop{display:block}
+      .hamb{display:none}
+      .hero .wrap{grid-template-columns:1.1fr .9fr}
+      .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    .card{background:var(--card);border:1px solid #161616;border-radius:var(--radius);padding:16px}
+    .badge{display:inline-block;font-size:.8rem;background:rgba(255,26,26,.12);color:var(--accent);border:1px solid rgba(255,26,26,.35);padding:6px 10px;border-radius:999px;font-weight:700}
+    .menu-item{display:flex;gap:14px;align-items:flex-start;justify-content:space-between}
+    .menu-item h4{margin:0}
+    .price{color:var(--accent);font-weight:800}
+    .time{color:var(--muted);font-weight:600}
+    /* Events */
+    .event{display:flex;gap:14px;align-items:center;justify-content:space-between}
+    .event strong{color:#fff}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .gallery figure{margin:0}
+    .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;border:1px solid #171717}
+    .gallery .tall{grid-column:span 2}
+    figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+    /* CTA Bar */
+    .cta{position:sticky;bottom:12px;z-index:40}
+    .cta .bar{max-width:var(--max);margin:0 auto;display:flex;gap:10px;justify-content:center}
+    .cta .bar .btn{padding:12px 18px}
+    /* Footer */
+    footer{padding:32px 0;border-top:1px solid #121212;color:var(--muted)}
+    footer a{color:var(--muted)}
+  </style>
+  <script>
+    // Smooth close of mobile nav (basic)
+    function toggleNav(){
+      const m = document.getElementById('mobile');
+      m.hidden = !m.hidden;
+    }
+  </script>
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "17/19 Urban Bistrot",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via di Santa Costanza 17/19",
+      "addressLocality": "Roma",
+      "postalCode": "00198",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 06 0000 1719",
+    "servesCuisine": ["Colazione", "Italiana", "Fusion", "Cocktail Bar"],
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"02:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"03:00"}
+    ],
+    "url": "https://example.com/1719",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="Homepage 17/19 Urban Bistrot">
+        <div class="logo" aria-hidden="true"><span>17</span></div>
+        <h3>17/19 Urban Bistrot</h3>
+      </a>
+      <nav class="desktop" aria-label="Navigazione principale">
+        <ul>
+          <li><a href="#about">Chi siamo</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cocktail">Cocktail</a></li>
+          <li><a href="#events">Eventi</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visitarci</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a href="#prenota" class="btn">Prenota ora</a>
+        <button class="hamb" onclick="toggleNav()" aria-controls="mobile" aria-expanded="false" aria-label="Apri menu">☰</button>
+      </div>
+    </div>
+    <div id="mobile" class="container" hidden>
+      <div class="card" style="margin:0 0 14px">
+        <div style="display:grid;gap:12px">
+          <a href="#about" onclick="toggleNav()">Chi siamo</a>
+          <a href="#menu" onclick="toggleNav()">Menu</a>
+          <a href="#cocktail" onclick="toggleNav()">Cocktail</a>
+          <a href="#events" onclick="toggleNav()">Eventi</a>
+          <a href="#gallery" onclick="toggleNav()">Gallery</a>
+          <a href="#visit" onclick="toggleNav()">Visitarci</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container wrap">
+        <div>
+          <span class="tag">Roma • Quartiere Trieste • Via di Santa Costanza 17/19</span>
+          <h1>Colazioni, pranzi, cene & cocktail. <span style="color:var(--accent)">DJ set techno</span> suonato in vinile.</h1>
+          <p>Un urban bistrot contemporaneo: cucina all‑day, drink list signature e una consolle dedicata ai vinili. Ogni weekend ospitiamo DJ resident e special guest per set profondi e danzerecci.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+            <a href="#prenota" class="btn" aria-label="Prenota un tavolo al 17/19">Prenota un tavolo</a>
+            <a href="#events" class="btn btn-outline" aria-label="Vai alla sezione eventi">Eventi & Line‑up</a>
+          </div>
+          <div class="hero-grid">
+            <div class="tile">
+              <div class="chip">🍳 Colazioni tutti i giorni <span class="time">8:00–12:00</span></div>
+              <div class="chip">🥗 Pranzo smart <span class="time">12:00–15:00</span></div>
+            </div>
+            <div class="tile">
+              <div class="chip">🍝 Cena contemporanea <span class="time">19:00–23:30</span></div>
+              <div class="chip">🍸 Cocktail & DJ set <span class="time">22:00–02:00</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2 style="margin-bottom:10px">Questa settimana</h2>
+          <div class="grid cols-2">
+            <div class="card">
+              <span class="badge">VINYL ONLY</span>
+              <h3>Venerdì • Techno Grooves</h3>
+              <p>Resident DJ set su vinile. Deep, Minimal, Raw.</p>
+              <p class="time">Dalle 22:30</p>
+            </div>
+            <div class="card">
+              <span class="badge">SPECIAL GUEST</span>
+              <h3>Sabato • Acid Night</h3>
+              <p>Guest DJ + warm‑up in apertura. Dancefloor vibes assicurate.</p>
+              <p class="time">Dalle 22:30</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:10px">
+            <a class="btn" href="#events">Scopri la line‑up</a>
+            <a class="btn btn-outline" href="#prenota">Prenota lista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container grid cols-2">
+        <div>
+          <h2>Urban Bistrot. Vibrazioni techno.</h2>
+          <p>17/19 nasce nel cuore di Roma come spazio fluido: al mattino profumo di specialty coffee e bakery; a pranzo piatti veloci e curati; la sera cucina contemporanea e cocktail list firmata. Quando cala il buio, la nostra cabina in vinile prende vita: DJ set selezionati, sound system calibrato, luci minimal.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <span class="badge">Caffetteria Specialty</span>
+            <span class="badge">Cucina All‑Day</span>
+            <span class="badge">Signature Cocktail</span>
+            <span class="badge">DJ Set in Vinile</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:8px">Orari di apertura</h3>
+          <div class="grid cols-2">
+            <div>
+              <p><strong>Lun–Ven</strong><br><span class="time">08:00 – 02:00</span></p>
+              <p><strong>Sab</strong><br><span class="time">09:00 – 03:00</span></p>
+            </div>
+            <div>
+              <p><strong>Dom</strong><br><span class="time">09:00 – 03:00</span></p>
+              <p><strong>Cucina</strong><br><span class="time">12:00 – 15:00 • 19:00 – 23:30</span></p>
+            </div>
+          </div>
+          <p style="margin-top:4px">Ultima chiamata cocktail: <span class="time">30 min</span> prima della chiusura.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="container">
+        <h2>Menu</h2>
+        <p>Una selezione che cambia con le stagioni. Ecco un assaggio.</p>
+        <div class="grid cols-3" style="margin-top:10px">
+          <div class="card">
+            <h3>Colazioni</h3>
+            <div class="menu-item"><div><h4>Cornetto alla crema</h4><p>Burro, lievitazione lenta, crema pasticciera.</p></div><div class="price">€2,00</div></div>
+            <div class="menu-item"><div><h4>Toast Avocado & Uovo</h4><p>Pane rustico, avocado, uovo in camicia, lime.</p></div><div class="price">€8,50</div></div>
+            <div class="menu-item"><div><h4>Pancake Frutti Rossi</h4><p>Sciroppo d'acero, yogurt greco.</p></div><div class="price">€9,00</div></div>
+          </div>
+          <div class="card">
+            <h3>Pranzo</h3>
+            <div class="menu-item"><div><h4>Caesar Urban</h4><p>Pollo grigliato, crostini, dressing leggero.</p></div><div class="price">€11,00</div></div>
+            <div class="menu-item"><div><h4>Club Sandwich 17/19</h4><p>Pane tostato, tacchino, bacon, lattuga, pomodoro.</p></div><div class="price">€12,50</div></div>
+            <div class="menu-item"><div><h4>Pasta del Giorno</h4><p>Selezione dello chef.</p></div><div class="price">€13,00</div></div>
+          </div>
+          <div class="card">
+            <h3>Cena</h3>
+            <div class="menu-item"><div><h4>Polpo alla Piastra</h4><p>Crema di patate affumicate, crumble di olive.</p></div><div class="price">€18,00</div></div>
+            <div class="menu-item"><div><h4>Risotto Rosso</h4><p>Barbabietola, caprino, limone candito.</p></div><div class="price">€17,00</div></div>
+            <div class="menu-item"><div><h4>Burger Black</h4><p>Pane al carbone, cheddar, cipolla caramellata.</p></div><div class="price">€15,00</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COCKTAIL -->
+    <section id="cocktail">
+      <div class="container grid cols-2">
+        <div>
+          <h2>Cocktail Signature</h2>
+          <p>Classici eseguiti a regola d'arte e creazioni originali ispirate alla cultura techno.</p>
+          <div class="card">
+            <div class="menu-item"><div><h4>Vinyl Negroni</h4><p>Gin, bitter, vermouth rosso, affumicatura al momento.</p></div><div class="price">€10</div></div>
+            <div class="menu-item"><div><h4>Minimal Mule</h4><p>Vodka, lime, ginger beer, menta.</p></div><div class="price">€9</div></div>
+            <div class="menu-item"><div><h4>Acid 303</h4><p>Tequila, agrumi, bitter al pompelmo, sale nero.</p></div><div class="price">€11</div></div>
+            <div class="menu-item"><div><h4>Blackout Spritz</h4><p>Bitter scuro, prosecco, soda, twist di arancia.</p></div><div class="price">€8</div></div>
+          </div>
+        </div>
+        <div class="card" aria-label="Callout DJ set">
+          <span class="badge">VINYL DJ BOOTH</span>
+          <h3>Consolle in vinile</h3>
+          <p>Gireranno solo dischi. Dal warm‑up alle ore piccole, selezioni curate tra deep, dub e acid techno. Impianto audio calibrato per un suono pieno e pulito.</p>
+          <p class="time">Line‑up aggiornata ogni settimana.</p>
+          <a href="#events" class="btn">Vai agli eventi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+      <div class="container">
+        <h2>Eventi • Line‑up</h2>
+        <p>DJ set techno suonato in vinile. Prenota la tua lista per ingresso prioritario.</p>
+        <div class="grid cols-3" style="margin-top:10px">
+          <div class="card event">
+            <div>
+              <span class="badge">Venerdì</span>
+              <h3>Techno Grooves</h3>
+              <p class="time">Start 22:30 • Resident DJ</p>
+            </div>
+            <a class="btn" href="#prenota">Lista</a>
+          </div>
+          <div class="card event">
+            <div>
+              <span class="badge">Sabato</span>
+              <h3>Acid Night</h3>
+              <p class="time">Start 22:30 • Special Guest</p>
+            </div>
+            <a class="btn" href="#prenota">Lista</a>
+          </div>
+          <div class="card event">
+            <div>
+              <span class="badge">Domenica</span>
+              <h3>After Brunch Vibes</h3>
+              <p class="time">16:00 – 20:00 • Downtempo & House</p>
+            </div>
+            <a class="btn" href="#prenota">Lista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p>Immagini del locale (fonte: 17/19 Cocktail Bar su TripAdvisor e Facebook). In produzione sostituiremo con scatti proprietari.</p>
+        <div class="gallery" aria-label="Galleria immagini 17/19">
+          <figure class="tall">
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g187791-d4799462-Reviews-17_19_Bar-Rome_Lazio.html" target="_blank" rel="noopener">
+              <img loading="lazy" alt="Cocktail in barattolo – 17/19 Bar" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c76d4?q=80&w=1200&auto=format&fit=crop">
+            </a>
+            <figcaption>17/19 Bar – Roma (link a TripAdvisor)</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.tripadvisor.com/LocationPhotoDirectLink-g187791-d4799462-i480860248-17_19_Bar-Rome_Lazio.html" target="_blank" rel="noopener">
+              <img loading="lazy" alt="Interni industrial – 17/19" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=900&auto=format&fit=crop">
+            </a>
+            <figcaption>Interni – fonte TripAdvisor</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.facebook.com/p/1719-Cocktail-Bar-Bistrot-100077668764198/" target="_blank" rel="noopener">
+              <img loading="lazy" alt="Bancone cocktail – 17/19" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=900&auto=format&fit=crop">
+            </a>
+            <figcaption>Bancone – pagina Facebook ufficiale</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.instagram.com/1719_cocktailbar/" target="_blank" rel="noopener">
+              <img loading="lazy" alt="Aperitivo – 17/19" src="https://images.unsplash.com/photo-1541343672885-9be56236302a?q=80&w=900&auto=format&fit=crop">
+            </a>
+            <figcaption>Feed Instagram @1719_cocktailbar</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit">
+      <div class="container grid cols-2">
+        <div>
+          <h2>Vieni a trovarci</h2>
+          <p><strong>Indirizzo</strong><br>Via di Santa Costanza 17/19, 00198 Roma (RM)</p>
+          <p><strong>Prenotazioni</strong><br><a href="tel:+390600001719">+39 06 0000 1719</a> • <a href="mailto:booking@1719bistrot.it">booking@1719bistrot.it</a></p>
+          <p><strong>Social</strong><br><a href="#">Instagram</a> • <a href="#">Facebook</a> • <a href="#">TikTok</a></p>
+          <div id="prenota" class="card" style="margin-top:10px">
+            <h3>Prenota un tavolo o la lista</h3>
+            <form action="mailto:booking@1719bistrot.it" method="post" enctype="text/plain">
+              <div class="grid cols-2">
+                <label>Nome e Cognome<br><input required name="nome" placeholder="Il tuo nome" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
+                <label>Telefono<br><input required name="telefono" placeholder="Es. +39 3xx xxx xxxx" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
+              </div>
+              <div class="grid cols-2">
+                <label>Data<br><input type="date" name="data" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
+                <label>Persone<br><input type="number" min="1" max="20" name="persone" placeholder="2" style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></label>
+              </div>
+              <label>Note<br><textarea name="note" rows="4" placeholder="Allergie, orario preferito, tavolo..." style="width:100%;padding:12px;border-radius:10px;border:1px solid #222;background:#0b0b0b;color:#fff"></textarea></label>
+              <div style="display:flex;gap:10px;margin-top:10px">
+                <button type="submit" class="btn">Invia richiesta</button>
+                <a class="btn btn-outline" href="tel:+390600001719">Chiama</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mappa</h3>
+          <p class="time">Quartiere Trieste – collegato con metro B1 (S. Agnese/Annibaliano)</p>
+          <div style="overflow:hidden;border-radius:14px;border:1px solid #171717">
+            <iframe title="Mappa 17/19 Urban Bistrot" src="https://www.google.com/maps?q=Via%20di%20Santa%20Costanza%2017%2F19%2C%2000198%20Roma&output=embed" width="100%" height="320" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cta" aria-hidden="false">
+    <div class="bar">
+      <a href="#prenota" class="btn">Prenota ora</a>
+      <a href="#events" class="btn btn-outline">Eventi</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>17/19 Urban Bistrot</strong>
+        <p>Via di Santa Costanza 17/19, 00198 Roma • P.IVA 00000000000</p>
+      </div>
+      <div>
+        <a href="#">Privacy</a> • <a href="#">Cookie</a> • <a href="#">Termini</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
