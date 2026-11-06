@@ -7,6 +7,11 @@
 - Chromium 1440/768/390/320: nessun overflow o errore JavaScript; font/immagini locali, navigazione e skip link da tastiera funzionanti. Nessuna richiesta esterna al caricamento.
 - Revisione visiva indipendente: ship, nessuna correzione materiale. Documentazione di design e sidecar aggiornati al perimetro attuale.
 
+## Pubblicazione 1.1.0 e backlink verificati
+
+- Portfolio pubblico 1.1.0 HTTP 200, presentazione corrente senza riferimenti esclusi. Anteprima social aggiornata.
+- Tutti gli otto siti Pages hanno la firma pubblicata e verificata in 16 combinazioni sito/larghezza. Dettagli, versioni e commit in [BACKLINKS.md](BACKLINKS.md).
+
 ## Verifiche precedenti
 
 # Portfolio 1.0.0 — verifica
