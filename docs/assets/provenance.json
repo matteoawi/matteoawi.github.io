@@ -1,17 +1,5 @@
 [
   {
-    "name": "florame",
-    "url": "https://florame.ai/",
-    "status": 200,
-    "title": "Bouquet personalizzati online con AI e fioristi | florame.ai",
-    "capturedAt": "2026-11-06T02:22:08.587440+00:00",
-    "asset": "assets/projects/florame.webp",
-    "sourceSha256": "ed9a064d565cde7330b7647851d384a98cea7fa1a2a8b6e4f24b92afc0c14c83",
-    "sha256": "ad1f7ce47d86c9524a114fa4ac2b702e3768845d699c37d06e7a20667941a6ba",
-    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed.",
-    "note": "Cookie consent rejected in disposable browser context before capture."
-  },
-  {
     "name": "pause",
     "url": "https://matteoawi.github.io/Pause/",
     "status": 200,
@@ -68,8 +56,8 @@
   },
   {
     "asset": "assets/social-preview.png",
-    "source": "Original portfolio HTML/CSS, Chromium viewport1200x630,2026-11-06",
-    "transformation": "Actual page screenshot. Origin embedded in PNG metadata.",
-    "sha256": "79c3fd7a351740c7e0935bcbb735841a8bd29c0b005c842210a025107dfea761"
+    "source": "Updated personal portfolio HTML/CSS rendered in Chromium,1200x630,2026-11-06",
+    "transformation": "Real rendered viewport; no replaced product content.",
+    "sha256": "a517812a14cbbfcd86fa8f98d335edfbdf7b68a5174076ad0c14d438b71a7fd8"
   }
 ]

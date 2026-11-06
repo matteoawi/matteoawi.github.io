@@ -6,25 +6,24 @@
 web
 
 ## Stack
-HTML, CSS e JavaScript statici sul repository esistente matteoawi/matteoawi.github.io. GitHub Pages dalla radice di main; nessun framework o backend necessario.
+HTML e CSS statici. GitHub Pages da main:/docs.
 
 ## Product Purpose
-Sostituire il vecchio sito del bistrot sul dominio personale con il portfolio dei progetti di Matteo. L’utente dichiara di essere CEO di florame.ai e chiede di renderlo il ruolo principale.
+Presentare Matteo e una selezione di prodotti e siti pubblici, con collegamenti diretti.
 
 ## Users
-Inferenza operativa dal brief: visitatori che vogliono conoscere Matteo e aprire i suoi prodotti o siti pubblici.
+Persone che vogliono conoscere i progetti di Matteo e provarli online.
 
 ## Capabilities and Constraints
-florame.ai è il progetto principale, con un collegamento al servizio pubblico e nessun collegamento a un repository privato o codice reso pubblico. Pause, Parola e i siti già online possono comparire dopo verifica dei collegamenti. Non inventare clienti, risultati commerciali, ruoli in altre aziende, numeri di utenti o testimonianze. Il sito del bistrot 17/19 rimane sul suo dominio dedicato; il portfolio non deve sostituirlo. Non modificare altri repository o distribuire nuovi APK.
+La presentazione corrente è personale: nessun ruolo aziendale o progetto escluso. La preferenza di visibilità più recente sostituisce il brief iniziale. Conservare Pause, Parola, Fiori e Piante di Nino,17/19 Urban Bistrot e Al Jariri. Nessuna pubblicazione di codice privato, contatti personali non confermati, risultati commerciali o testimonianze inventate.
 
 ## Brand Commitments
-Nome Matteo e ruolo CEO di florame.ai confermati dalla richiesta. Nome completo e contatto personale sono aperti: non pubblicare recapiti non approvati: si usa solo Matteo e il profilo GitHub pubblico. Lingua italiana come assunzione di questa sessione, modificabile dall’utente.
+Nome Matteo, lingua italiana, link al profilo GitHub pubblico. Nome completo e contatto personale non forniti.
 
 ## Evidence on Hand
-Richiesta esplicita dell’utente; repository GitHub pubblici dell’account matteoawi; florame.ai, Pause, Parola, fioriepiante-nino.it e 1719urbanbistrot.it pubblici. Anteprime ricavate da catture reali dei siti, con provenienza conservata. Nessun ritratto o contatto personale approvato disponibile.
+Cinque progetti online con catture reali e provenienza in docs/assets/provenance.json. La rimozione di contenuti attuali comprende anche metadati e anteprima social. Le versioni storiche rimangono nella cronologia Git.
 
 ## Product Principles
-- Rendere chiaro il ruolo CEO e il prodotto principale.
-- Invitare ad aprire i prodotti, senza richiedere conoscenze tecniche.
-- Presentare solo descrizioni e progetti verificabili.
-- Conservare storico Git, progressi remoti, accessibilità e semplicità.
+- Mostrare solo i progetti inclusi nel perimetro corrente.
+- Collegare i prodotti direttamente, con testi semplici.
+- Conservare accessibilità, leggibilità e assenza di tracking.

@@ -1,3 +1,14 @@
+# Portfolio 1.1.0 — verifica
+
+6 novembre 2026.
+
+- Presentazione personale, cinque progetti mantenuti e CTA verso la selezione dei progetti.
+- Nessun riferimento al progetto escluso in HTML, CSS, metadati, changelog distribuito o provenienza; immagine e sidecar ritirati, anteprima social rigenerata e verificata.
+- Chromium 1440/768/390/320: nessun overflow o errore JavaScript; font/immagini locali, navigazione e skip link da tastiera funzionanti. Nessuna richiesta esterna al caricamento.
+- Revisione visiva indipendente: ship, nessuna correzione materiale. Documentazione di design e sidecar aggiornati al perimetro attuale.
+
+## Verifiche precedenti
+
 # Portfolio 1.0.0 — verifica
 
 6 novembre 2026. Sito statico HTML/CSS; non modifica Pause né altri progetti.

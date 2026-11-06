@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0 — 2026-11-06
+
+- Updated the personal presentation and project selection following the owner’s visibility preference.
+- Removed the excluded project from page content, metadata, images and asset provenance; refreshed the social preview.
+- Preserved the five remaining projects, public contact link and responsive layout.
+
+
 ## 1.0.0 — 2026-11-06
 
 - Replaced the unrelated bistrot page at matteoawi.github.io with Matteo’s personal portfolio.
