@@ -8,6 +8,13 @@
 - Parola 6.11.2: 63 test esistenti superati e file sito/offline ricostruiti. Anti Santa Club 0.1.2: build Vite riuscita. Pause: soltanto sito 1.1.4, APK 0.4.4 invariato.
 - Revisione visiva indipendente: ship, nessuna correzione materiale; portfolio e 16 catture degli altri siti esaminate. Il metadato autore non è presentato come un backlink SEO garantito.
 
+## Pubblicazione 1.2.0 verificata
+
+- Portfolio pubblicato dal commit `70d2a14`: Pages built. Ripetuti su HTTPS i controlli a 1440/768/390/320 px: CEO e florame.ai centrali, sei progetti, immagini e navigazione corrette; zero errori JavaScript, overflow o richieste esterne al caricamento.
+- Tutti gli otto siti pubblici HTTP 200. Verifiche Chromium live a 1440/390 px: 16/16 controlli superati; un solo riferimento autore nel head, nessuna ancora al portfolio nel body, nessun elemento della firma aggiunta e nessun caricamento automatico del portfolio.
+- Anti Santa Club: workflow Pages `42182813321` completato con successo sul commit `931d1b0`. Commit delle altre pubblicazioni in [BACKLINKS.md](BACKLINKS.md).
+- Questi sono controlli mirati alla correzione richiesta, non una certificazione generale dei siti o del posizionamento SEO.
+
 ## Verifiche precedenti
 
 # Portfolio 1.1.0 — verifica
