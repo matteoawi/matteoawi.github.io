@@ -131,7 +131,7 @@ La palette separa le azioni blu dai campi verdi dei contenuti e riserva il rosa 
 
 ## Typography
 
-**Display Font:** Onest, con fallback ui-sans-serif, system-ui, sans-serif.  
+**Display Font:** Onest, con fallback ui-sans-serif, system-ui, sans-serif.
 **Body Font:** Onest, con gli stessi fallback.
 
 Il font variabile è servito localmente da `docs/assets/fonts/onest.woff2`, con pesi disponibili da 100 a 900 e `font-display: swap`. Titoli bilanciati e tracking serrato danno carattere senza cambiare famiglia.

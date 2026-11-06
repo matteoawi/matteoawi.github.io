@@ -12,4 +12,12 @@
 - Tutti i 7 raster hanno origine incorporata oppure sidecar supportato dal tool; scansione senza asset mancanti. Nessun testo, contatore o contenuto dei siti catturati è stato sostituito.
 - Il vecchio contenuto bistrot e il file HTML erroneamente chiamato workflow vengono rimossi dal sito corrente, conservandone la cronologia Git.
 
-La pubblicazione GitHub Pages e la verifica HTTPS saranno registrate dopo l’effettivo deployment. Nessun nome completo, recapito personale o ruolo aggiuntivo inventato.
+## Pubblicazione verificata
+
+- Commit del portfolio: `4dd7b37`. Pages da main:/docs, HTTPS enforced, build completata.
+- Homepage HTTPS HTTP 200 con il portfolio corretto. Quindici pagine/asset pubblici corrispondono ai locali, con sola normalizzazione CRLF/LF per il testo e confronto esatto dei binari.
+- Ripetuti sul sito pubblico tutti i controlli browser a 1440/768/390/320 px: nessun overflow, errore JavaScript o richiesta esterna; navigazione, tastiera, immagini e novità funzionanti.
+- Le rotte indipendenti /Pause/ e /parola/ restano HTTP 200 e mostrano i rispettivi prodotti.
+- Il cambio sorgente Pages da radice a docs richiede una build successiva alla configurazione: la prima build, partita dal push precedente, mostrava il README dalla vecchia sorgente. Richiesta una build dalla configurazione corretta e verificato il risultato prima di dichiararlo online.
+
+Nessun nome completo, recapito personale o ruolo aggiuntivo inventato.

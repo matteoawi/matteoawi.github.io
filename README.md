@@ -34,3 +34,5 @@ The previous unrelated bistrot page and an HTML file incorrectly placed under `.
 Fetch and merge `origin/main` before publishing; preserve work from other computers, never force push. Work in a `codex/` branch when useful, verify desktop/mobile, keyboard and real outbound links, update version/changelog, then commit and push to main. Site publication is independent from Android releases.
 
 Product truth is in `PRODUCT.md`; visual tokens and components are documented in `DESIGN.md`. Verification records belong in `VERIFICATION.md`. The development-only direction brief stays outside the deployed docs folder.
+
+If the Pages source folder changes, request a fresh Pages build after saving the new source. Verify the deployed root shows the actual portfolio HTML, rather than the README fallback from an earlier root build. Normal updates keep main:/docs unchanged.
