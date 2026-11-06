@@ -1,3 +1,15 @@
+# Portfolio 1.2.0 — chiarimento del perimetro
+
+6 novembre 2026.
+
+- Ripristinati ruolo CEO e sezione centrale florame.ai, sei progetti e anteprima reale. Nessun codice privato pubblicato.
+- Portfolio verificato a 1440/768/390/320 px: navigazione, tastiera, immagini e font locali corretti; zero overflow, errori JavaScript o richieste esterne aggiuntive.
+- Sugli altri otto siti: 16 controlli locali confermano esattamente un link autore nel head, zero ancore al portfolio nel body, zero elementi della firma aggiunta e zero caricamenti automatici del portfolio.
+- Parola 6.11.2: 63 test esistenti superati e file sito/offline ricostruiti. Anti Santa Club 0.1.2: build Vite riuscita. Pause: soltanto sito 1.1.4, APK 0.4.4 invariato.
+- Revisione visiva indipendente: ship, nessuna correzione materiale; portfolio e 16 catture degli altri siti esaminate. Il metadato autore non è presentato come un backlink SEO garantito.
+
+## Verifiche precedenti
+
 # Portfolio 1.1.0 — verifica
 
 6 novembre 2026.

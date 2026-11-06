@@ -1,6 +1,6 @@
 # Portfolio di Matteo
 
-- Sito personale: Matteo e i suoi progetti pubblici. Non mostrare ruoli aziendali o progetti esclusi dal perimetro corrente, neppure in metadati, changelog pubblico o anteprime. Non inventare cognome, recapiti, incarichi, clienti o risultati.
+- Sito personale: Matteo, CEO di florame.ai. florame.ai deve restare centrale su questo portfolio; non pubblicare codice privato. Sugli altri siti niente firme visibili: soltanto metadati autore, senza presentarli come backlink SEO garantiti.
 - GitHub Pages serve docs/ dal branch main. PRODUCT.md, DESIGN.md e brief di sviluppo restano fuori dalla directory distribuita.
 - Dopo ogni modifica: commit descrittivo e push su GitHub senza chiedere conferma. Prima di pubblicare fetch e merge origin/main, preservando gli aggiornamenti di altri PC. Mai force push.
 - Aggiornare VERSION, CHANGELOG.md, docs/changelog.html e la versione nel footer in modo coerente.

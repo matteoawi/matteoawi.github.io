@@ -6,24 +6,19 @@
 web
 
 ## Stack
-HTML e CSS statici. GitHub Pages da main:/docs.
+HTML/CSS statici, GitHub Pages main:/docs.
 
 ## Product Purpose
-Presentare Matteo e una selezione di prodotti e siti pubblici, con collegamenti diretti.
-
-## Users
-Persone che vogliono conoscere i progetti di Matteo e provarli online.
+Presentare Matteo come CEO di florame.ai, progetto centrale, seguito da Pause, Parola e siti realizzati. Nome e ruolo sono forniti dall’utente. Non inventare cognome, contatti, clienti o risultati.
 
 ## Capabilities and Constraints
-La presentazione corrente è personale: nessun ruolo aziendale o progetto escluso. La preferenza di visibilità più recente sostituisce il brief iniziale. Conservare Pause, Parola, Fiori e Piante di Nino,17/19 Urban Bistrot e Al Jariri. Nessuna pubblicazione di codice privato, contatti personali non confermati, risultati commerciali o testimonianze inventate.
-
-## Brand Commitments
-Nome Matteo, lingua italiana, link al profilo GitHub pubblico. Nome completo e contatto personale non forniti.
+florame.ai rimane visibile e centrale sul portfolio personale, con collegamenti al prodotto pubblico e anteprima reale, senza codice privato. La precisazione dell’utente sostituisce l’interpretazione precedente che lo escludeva. Sugli altri otto siti Pages rimuovere ogni firma visibile aggiunta: il riferimento a Matteo rimane soltanto nel codice come link autore nel head. Questo metadato non viene presentato come equivalente a un backlink visibile o come garanzia SEO.
 
 ## Evidence on Hand
-Cinque progetti online con catture reali e provenienza in docs/assets/provenance.json. La rimozione di contenuti attuali comprende anche metadati e anteprima social. Le versioni storiche rimangono nella cronologia Git.
+Sei progetti online con immagini reali e provenienza in docs/assets/provenance.json. Nome completo e contatto personale non forniti. La cronologia Git viene conservata.
 
 ## Product Principles
-- Mostrare solo i progetti inclusi nel perimetro corrente.
-- Collegare i prodotti direttamente, con testi semplici.
-- Conservare accessibilità, leggibilità e assenza di tracking.
+- Ruolo CEO e florame.ai immediatamente riconoscibili sul portfolio.
+- Siti dei clienti senza promozione estranea visibile.
+- Metadati autore semantici, senza ancore nascoste nel corpo o promesse SEO.
+- Accessibilità, semplicità e assenza di tracking aggiuntivo.

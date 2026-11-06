@@ -2,11 +2,11 @@
 
 [Visit matteoawi.github.io](https://matteoawi.github.io/)
 
-A personal portfolio of Matteo’s public products, apps and websites.
+A personal portfolio featuring Matteo as CEO of florame.ai, followed by his public products, apps and websites. The product is public; its private source is not exposed.
 
 ## Current version
 
-**1.1.0**, November 6, 2026. [Changelog](CHANGELOG.md).
+**1.2.0**, November 6, 2026. [Changelog](CHANGELOG.md).
 
 ## Website
 
@@ -20,8 +20,8 @@ Open http://127.0.0.1:8772/. The `VERSION`, changelogs and visible footer versio
 
 ## Content and assets
 
-- Identity: Matteo. No surname, email, location or LinkedIn is inferred.
-- Featured products: Pause and Parola.
+- Identity: Matteo, CEO of florame.ai. No surname, email, location or LinkedIn is inferred.
+- Featured products: florame.ai, Pause and Parola.
 - Websites: Fiori e Piante di Nino, 17/19 Urban Bistrot and Al Jariri Language & Culture.
 - Previews are captures of the actual public websites, resized without changing page content or counts. Sources, capture timestamps and hashes are in [asset provenance](docs/assets/provenance.json).
 - Onest is hosted locally with its SIL OFL license in `docs/assets/fonts/OFL.txt`.

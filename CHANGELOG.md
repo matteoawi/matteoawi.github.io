@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — 2026-11-06
+
+- Restore florame.ai as the central project and Matteo’s CEO role on the personal portfolio.
+- Keep other sites free of visible portfolio promotion; author references move to document metadata.
+- Restore real flagship imagery and refresh the social preview.
+
 ## 1.1.0 — 2026-11-06
 
 - Updated the personal presentation and project selection following the owner’s visibility preference.
