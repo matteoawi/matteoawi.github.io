@@ -1,0 +1,75 @@
+[
+  {
+    "name": "florame",
+    "url": "https://florame.ai/",
+    "status": 200,
+    "title": "Bouquet personalizzati online con AI e fioristi | florame.ai",
+    "capturedAt": "2026-11-06T02:22:08.587440+00:00",
+    "asset": "assets/projects/florame.webp",
+    "sourceSha256": "ed9a064d565cde7330b7647851d384a98cea7fa1a2a8b6e4f24b92afc0c14c83",
+    "sha256": "ad1f7ce47d86c9524a114fa4ac2b702e3768845d699c37d06e7a20667941a6ba",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed.",
+    "note": "Cookie consent rejected in disposable browser context before capture."
+  },
+  {
+    "name": "pause",
+    "url": "https://matteoawi.github.io/Pause/",
+    "status": 200,
+    "title": "Pause — Fewer ads. More play.",
+    "capturedAt": "2026-11-06T02:19:55.239886+00:00",
+    "asset": "assets/projects/pause.webp",
+    "sourceSha256": "97116124ac89b9f1601f1c30465ae25a9b857c89cfe6c2a8af6f9ea39faa24c7",
+    "sha256": "c08e1aae12b386f0d854d6756c8a4d8e4bdbacff8ae716eab65908a225aa8945",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed."
+  },
+  {
+    "name": "parola",
+    "url": "https://matteoawi.github.io/parola/",
+    "status": 200,
+    "title": "Parola 6.11.0 — Mahjong delle lingue",
+    "capturedAt": "2026-11-06T02:19:57.850847+00:00",
+    "asset": "assets/projects/parola.webp",
+    "sourceSha256": "5653cc5f955b7943e4621fd0b459ed8425a6e9946539c9c125d59d2e67e825e9",
+    "sha256": "b5d1d44a08afd24038e868d41eeeb68535d022ce97ffa9b955749cdd532b6638",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed."
+  },
+  {
+    "name": "nino",
+    "url": "https://fioriepiante-nino.it/",
+    "status": 200,
+    "title": "🌸 Fiori e Piante di Nino — Roma",
+    "capturedAt": "2026-11-06T02:20:00.757945+00:00",
+    "asset": "assets/projects/nino.webp",
+    "sourceSha256": "866ece41e90c609235efbeb92793a8b5a8d99a5ec91792b94634fa9bde38fa0f",
+    "sha256": "fff0113f2144e8c766bad99de69fda7c3fbaa9ce57f6b80f19f895437473b969",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed."
+  },
+  {
+    "name": "bistrot",
+    "url": "https://1719urbanbistrot.it/",
+    "status": 200,
+    "title": "17/19 Urban Bistrot",
+    "capturedAt": "2026-11-06T02:20:03.343844+00:00",
+    "asset": "assets/projects/bistrot.webp",
+    "sourceSha256": "49d34c65c1fc45bc69337c42ca4254cc34f0e5d9c41e8c087e8a6d727aa66c9d",
+    "sha256": "8872fa546599a817ccd54a06e28d956e14e050251229c8fb9b06733ed4e668c0",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed."
+  },
+  {
+    "name": "aljariri",
+    "url": "https://matteoawi.github.io/Scuola-Arabo/",
+    "status": 200,
+    "title": "Corso di Arabo a Roma e Online | Al Jariri Language & Culture",
+    "capturedAt": "2026-11-06T02:20:05.952168+00:00",
+    "asset": "assets/projects/aljariri.webp",
+    "sourceSha256": "a02f4b2851a6189e885d52bf580e721ff2c4d04f5054e169be3b2a2b855ddeeb",
+    "sha256": "696642a99b2ee2d484823e375bfddb0b002d6e8775a77a733c7228c570ab237a",
+    "transformation": "Real public website viewport capture1440x1000; resized1200x833; WebP84. No content, text or counters changed."
+  },
+  {
+    "asset": "assets/social-preview.png",
+    "source": "Original portfolio HTML/CSS, Chromium viewport1200x630,2026-11-06",
+    "transformation": "Actual page screenshot. Origin embedded in PNG metadata.",
+    "sha256": "79c3fd7a351740c7e0935bcbb735841a8bd29c0b005c842210a025107dfea761"
+  }
+]

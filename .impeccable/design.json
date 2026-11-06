@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-06T02:37:52.258Z",
+  "title": "Design System: Portfolio di Matteo",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Carta azzurra",
+        "tonalRamp": [
+          "oklch(15% 0.0031 243.7)",
+          "oklch(27% 0.0061 243.7)",
+          "oklch(39% 0.0094 243.7)",
+          "oklch(51% 0.0110 243.7)",
+          "oklch(63% 0.0110 243.7)",
+          "oklch(75% 0.0083 243.7)",
+          "oklch(87% 0.0044 243.7)",
+          "oklch(95% 0.0017 243.7)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Inchiostro petrolio",
+        "tonalRamp": [
+          "oklch(15% 0.0120 212.1)",
+          "oklch(27% 0.0235 212.1)",
+          "oklch(39% 0.0364 212.1)",
+          "oklch(51% 0.0428 212.1)",
+          "oklch(63% 0.0428 212.1)",
+          "oklch(75% 0.0321 212.1)",
+          "oklch(87% 0.0171 212.1)",
+          "oklch(95% 0.0064 212.1)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Ardesia leggibile",
+        "tonalRamp": [
+          "oklch(15% 0.0089 226.4)",
+          "oklch(27% 0.0176 226.4)",
+          "oklch(39% 0.0271 226.4)",
+          "oklch(51% 0.0319 226.4)",
+          "oklch(63% 0.0319 226.4)",
+          "oklch(75% 0.0239 226.4)",
+          "oklch(87% 0.0128 226.4)",
+          "oklch(95% 0.0048 226.4)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Blu azione",
+        "tonalRamp": [
+          "oklch(15% 0.0597 266.6)",
+          "oklch(27% 0.1173 266.6)",
+          "oklch(39% 0.1812 266.6)",
+          "oklch(51% 0.2132 266.6)",
+          "oklch(63% 0.2132 266.6)",
+          "oklch(75% 0.1599 266.6)",
+          "oklch(87% 0.0853 266.6)",
+          "oklch(95% 0.0320 266.6)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Filetto freddo",
+        "tonalRamp": [
+          "oklch(15% 0.0058 229.1)",
+          "oklch(27% 0.0114 229.1)",
+          "oklch(39% 0.0176 229.1)",
+          "oklch(51% 0.0207 229.1)",
+          "oklch(63% 0.0207 229.1)",
+          "oklch(75% 0.0155 229.1)",
+          "oklch(87% 0.0083 229.1)",
+          "oklch(95% 0.0031 229.1)"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Menta campione",
+        "tonalRamp": [
+          "oklch(15% 0.0110 131.1)",
+          "oklch(27% 0.0216 131.1)",
+          "oklch(39% 0.0334 131.1)",
+          "oklch(51% 0.0393 131.1)",
+          "oklch(63% 0.0393 131.1)",
+          "oklch(75% 0.0295 131.1)",
+          "oklch(87% 0.0157 131.1)",
+          "oklch(95% 0.0059 131.1)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Verde bosco",
+        "tonalRamp": [
+          "oklch(15% 0.0136 170.1)",
+          "oklch(27% 0.0268 170.1)",
+          "oklch(39% 0.0414 170.1)",
+          "oklch(51% 0.0487 170.1)",
+          "oklch(63% 0.0487 170.1)",
+          "oklch(75% 0.0365 170.1)",
+          "oklch(87% 0.0195 170.1)",
+          "oklch(95% 0.0073 170.1)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Bianco",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.9)",
+          "oklch(27% 0.0000 89.9)",
+          "oklch(39% 0.0000 89.9)",
+          "oklch(51% 0.0000 89.9)",
+          "oklch(63% 0.0000 89.9)",
+          "oklch(75% 0.0000 89.9)",
+          "oklch(87% 0.0000 89.9)",
+          "oklch(95% 0.0000 89.9)"
+        ]
+      },
+      "primary-hover": {
+        "role": "neutral",
+        "displayName": "Blu hover",
+        "tonalRamp": [
+          "oklch(15% 0.0518 265.9)",
+          "oklch(27% 0.1017 265.9)",
+          "oklch(39% 0.1571 265.9)",
+          "oklch(51% 0.1848 265.9)",
+          "oklch(63% 0.1848 265.9)",
+          "oklch(75% 0.1386 265.9)",
+          "oklch(87% 0.0739 265.9)",
+          "oklch(95% 0.0277 265.9)"
+        ]
+      },
+      "round-hover": {
+        "role": "neutral",
+        "displayName": "Verde hover",
+        "tonalRamp": [
+          "oklch(15% 0.0164 165.8)",
+          "oklch(27% 0.0323 165.8)",
+          "oklch(39% 0.0499 165.8)",
+          "oklch(51% 0.0587 165.8)",
+          "oklch(63% 0.0587 165.8)",
+          "oklch(75% 0.0441 165.8)",
+          "oklch(87% 0.0235 165.8)",
+          "oklch(95% 0.0088 165.8)"
+        ]
+      },
+      "board-caption": {
+        "role": "neutral",
+        "displayName": "Testo sul campione",
+        "tonalRamp": [
+          "oklch(15% 0.0112 164.1)",
+          "oklch(27% 0.0221 164.1)",
+          "oklch(39% 0.0341 164.1)",
+          "oklch(51% 0.0402 164.1)",
+          "oklch(63% 0.0402 164.1)",
+          "oklch(75% 0.0301 164.1)",
+          "oklch(87% 0.0161 164.1)",
+          "oklch(95% 0.0060 164.1)"
+        ]
+      },
+      "about-heading": {
+        "role": "neutral",
+        "displayName": "Titolo inverso",
+        "tonalRamp": [
+          "oklch(15% 0.0042 136.1)",
+          "oklch(27% 0.0083 136.1)",
+          "oklch(39% 0.0129 136.1)",
+          "oklch(51% 0.0151 136.1)",
+          "oklch(63% 0.0151 136.1)",
+          "oklch(75% 0.0113 136.1)",
+          "oklch(87% 0.0061 136.1)",
+          "oklch(95% 0.0023 136.1)"
+        ]
+      },
+      "about-copy": {
+        "role": "neutral",
+        "displayName": "Testo inverso",
+        "tonalRamp": [
+          "oklch(15% 0.0064 147.4)",
+          "oklch(27% 0.0126 147.4)",
+          "oklch(39% 0.0195 147.4)",
+          "oklch(51% 0.0230 147.4)",
+          "oklch(63% 0.0230 147.4)",
+          "oklch(75% 0.0172 147.4)",
+          "oklch(87% 0.0092 147.4)",
+          "oklch(95% 0.0034 147.4)"
+        ]
+      },
+      "arrow-surface": {
+        "role": "neutral",
+        "displayName": "Disco azzurro",
+        "tonalRamp": [
+          "oklch(15% 0.0048 242.4)",
+          "oklch(27% 0.0094 242.4)",
+          "oklch(39% 0.0145 242.4)",
+          "oklch(51% 0.0170 242.4)",
+          "oklch(63% 0.0170 242.4)",
+          "oklch(75% 0.0128 242.4)",
+          "oklch(87% 0.0068 242.4)",
+          "oklch(95% 0.0026 242.4)"
+        ]
+      },
+      "flower": {
+        "role": "secondary",
+        "displayName": "Rosa fiore",
+        "tonalRamp": [
+          "oklch(15% 0.0488 10.7)",
+          "oklch(27% 0.0960 10.7)",
+          "oklch(39% 0.1483 10.7)",
+          "oklch(51% 0.1745 10.7)",
+          "oklch(63% 0.1745 10.7)",
+          "oklch(75% 0.1308 10.7)",
+          "oklch(87% 0.0698 10.7)",
+          "oklch(95% 0.0262 10.7)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Titolo personale",
+        "purpose": "Nome e ruolo CEO di florame.ai."
+      },
+      "headline": {
+        "displayName": "Titolo di sezione",
+        "purpose": "Introduzione delle aree di contenuto."
+      },
+      "title": {
+        "displayName": "Nome prodotto",
+        "purpose": "Nomi delle app personali."
+      },
+      "body": {
+        "displayName": "Testo base",
+        "purpose": "Corpo pagina; varianti in DESIGN.md."
+      },
+      "label": {
+        "displayName": "Etichetta",
+        "purpose": "Navigazione e collegamenti."
+      }
+    },
+    "shadows": [
+      {
+        "name": "flagship-screen",
+        "value": "0 12px 28px #24473016",
+        "purpose": "Solo il montaggio della cattura florame.ai."
+      }
+    ],
+    "motion": [
+      {
+        "name": "intro-arrive",
+        "value": "0.65s cubic-bezier(.16,1,.3,1) both; translateY(10px) to translateY(0)",
+        "purpose": "Singolo ingresso dell'introduzione."
+      },
+      {
+        "name": "color-transition",
+        "value": "background .2s, color .2s",
+        "purpose": "Feedback dei collegamenti."
+      },
+      {
+        "name": "capture-hover",
+        "value": "transform .5s cubic-bezier(.16,1,.3,1); scale(1.015)",
+        "purpose": "Immagini prodotto e flagship, solo @media(hover:hover)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce; scroll-behavior:auto; animation:none; transition:none",
+        "purpose": "Rispetta la preferenza del sistema."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "min-width:1500px"
+      },
+      {
+        "name": "tablet",
+        "value": "max-width:850px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width:560px"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "max-width:360px"
+      }
+    ],
+    "tonalRampPolicy": "Le rampe OKLCH sono campioni sintetici per il pannello, non nuovi colori approvati per il sito. I valori normativi restano nel frontmatter di DESIGN.md.",
+    "evidence": {
+      "sources": [
+        "docs/style.css",
+        "docs/index.html",
+        "PRODUCT.md",
+        ".impeccable/portfolio-brief.md"
+      ],
+      "screenshots": [
+        {
+          "path": ".impeccable/review/desktop.png",
+          "viewportWidth": 1440
+        },
+        {
+          "path": ".impeccable/review/width-768.png",
+          "viewportWidth": 768
+        },
+        {
+          "path": ".impeccable/review/mobile.png",
+          "viewportWidth": 390
+        },
+        {
+          "path": ".impeccable/review/width-320.png",
+          "viewportWidth": 320
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Azione principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Collegamento principale al servizio pubblico.",
+      "html": "<a class=\"ds-primary\" href=\"https://florame.ai/\">Scopri florame.ai <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-primary{font-family:Onest,ui-sans-serif,system-ui,sans-serif;line-height:1.6;display:inline-flex;justify-content:space-between;align-items:center;gap:32px;min-height:56px;padding:16px 23px;border-radius:10px;background:var(--blue,#284bd4);color:var(--white,#fff);font-size:16px;font-weight:500;text-decoration:none;transition:background .2s,color .2s}.ds-primary:hover{background:#1a39ab}a:focus-visible{outline:3px solid var(--blue,#284bd4);outline-offset:6px}@media(max-width:850px){.ds-primary{padding-inline:19px;font-size:14px}}@media(max-width:560px){.ds-primary{min-height:50px;font-size:13px;padding:13px 16px;gap:21px}.ds-primary svg{width:18px;height:18px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Collegamento testuale",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Destinazione esplicita per un progetto personale.",
+      "html": "<a class=\"ds-text\" href=\"https://matteoawi.github.io/Pause/\">Scopri Pause <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-text{font-family:Onest,ui-sans-serif,system-ui,sans-serif;line-height:1.6;display:inline-flex;gap:13px;align-items:center;min-height:44px;font-size:14px;font-weight:500;color:var(--ink,#183c43);text-decoration:none}.ds-text svg{width:17px;height:17px}.ds-text:hover{text-decoration:underline;text-underline-offset:5px}a:focus-visible{outline:3px solid var(--blue,#284bd4);outline-offset:6px}"
+    },
+    {
+      "name": "Navigazione principale",
+      "kind": "nav",
+      "description": "Le tre destinazioni interne sempre visibili.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigazione principale\"><a href=\"#progetti\">Progetti</a><a href=\"#chi-sono\">Chi sono</a><a href=\"#contatti\">Contatti <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></nav>",
+      "css": ".ds-nav{font-family:Onest,ui-sans-serif,system-ui,sans-serif;line-height:1.6;display:flex;gap:34px;align-items:center;font-size:14px;font-weight:500;color:var(--ink,#183c43)}.ds-nav a{min-height:44px;display:inline-flex;gap:9px;align-items:center;text-decoration:none;color:inherit}.ds-nav svg{width:16px;height:16px}.ds-nav a:hover{text-decoration:underline;text-underline-offset:5px}a:focus-visible{outline:3px solid var(--blue,#284bd4);outline-offset:6px}@media(max-width:850px){.ds-nav{gap:22px}}@media(max-width:560px){.ds-nav{font-size:12px}.ds-nav svg{display:none}}"
+    },
+    {
+      "name": "Collegamento circolare Florame",
+      "kind": "button",
+      "refersTo": "round-link",
+      "description": "Controllo con nome accessibile sul campo menta.",
+      "html": "<a class=\"ds-round\" href=\"https://florame.ai/\" aria-label=\"Visita florame.ai\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-round{display:grid;place-items:center;width:57px;height:57px;border-radius:50%;background:var(--green,#193f33);color:var(--mint,#dcebd0);transition:background .2s}.ds-round svg{width:25px;height:25px}.ds-round:hover{background:#2e5b49}a:focus-visible{outline:3px solid var(--blue,#284bd4);outline-offset:6px}@media(max-width:560px){.ds-round{width:43px;height:43px}.ds-round svg{width:21px;height:21px}}@media(max-width:360px){.ds-round{width:40px;height:40px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Riga sito — stato mobile",
+      "kind": "custom",
+      "refersTo": "website-row",
+      "description": "Lo stato mobile effettivo senza miniatura: tutta la riga è un link.",
+      "html": "<a class=\"ds-website\" href=\"https://1719urbanbistrot.it/\"><div><h3>17/19 Urban Bistrot</h3><p>Un bistrot a Roma, anche online. Menù, prenotazioni ed eventi, senza giri inutili.</p><span class=\"ds-domain\">1719urbanbistrot.it</span></div><span class=\"ds-website-arrow\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a>",
+      "css": ".ds-website{font-family:Onest,ui-sans-serif,system-ui,sans-serif;line-height:1.6;display:grid;grid-template-columns:1fr 35px;align-items:center;gap:20px;padding:25px 0;border-block:1px solid var(--rule,#bdcdd5);color:var(--ink,#183c43);text-decoration:none}.ds-website h3{margin:0;font-size:22px;line-height:1.2;letter-spacing:-.03em;font-weight:600}.ds-website p{margin:10px 0 0;font-size:13px;line-height:1.7;color:var(--muted,#4b626c)}.ds-domain{display:block;margin-top:11px;font-size:12px;color:var(--muted,#4b626c)}.ds-website-arrow{width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#dae5ee;color:var(--blue,#284bd4);transition:background .2s,color .2s}.ds-website-arrow svg{width:18px;height:18px}.ds-website:hover h3{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}.ds-website:hover .ds-website-arrow{background:var(--blue,#284bd4);color:white}a:focus-visible{outline:3px solid var(--blue,#284bd4);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Una raccolta di prodotti reali",
+    "overview": "Il portfolio è un tavolo di progetti selezionati: carta azzurra, inchiostro verde scuro e immagini dei prodotti realmente online. La gerarchia rende immediatamente leggibile Matteo come CEO di florame.ai; l'ampio campo verde del progetto principale introduce le app personali e i siti successivi. I testi e le etichette rimangono in italiano.\n\nLa composizione è ariosa ma diretta. Titoli grandi, descrizioni brevi e collegamenti espliciti permettono di capire e aprire ogni prodotto. Le catture reali portano la varietà visiva, mentre il contenitore del portfolio mantiene una sola famiglia tipografica e controlli coerenti.",
+    "keyCharacteristics": [
+      "Carta azzurra e campi menta con inchiostro verde scuro.",
+      "Onest locale, titoli ampi e descrizioni brevi in italiano.",
+      "Catture reali montate su superfici morbide, righe web delimitate da filetti.",
+      "Collegamenti semantici, focus visibile e movimento contenuto."
+    ],
+    "rules": [
+      {
+        "name": "The Action Color Rule",
+        "body": "Il blu identifica azioni e accenti di orientamento; il grande campo menta introduce contenuto, senza competere con il pulsante principale.",
+        "section": "colors"
+      },
+      {
+        "name": "The Content Order Rule",
+        "body": "Conservare nome e ruolo, azione, prova del prodotto e descrizione in un ordine leggibile anche quando le colonne si impilano.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "**Do** mantenere il ruolo CEO di florame.ai esplicito e le etichette in italiano.",
+      "**Do** usare catture reali dei prodotti e descrizioni verificabili.",
+      "**Do** conservare link semantici, nomi accessibili, focus visibile e preferenza di movimento ridotto.",
+      "**Do** far adattare righe e colonne alla larghezza senza cambiare l'ordine narrativo."
+    ],
+    "donts": [
+      "**Don't** sostituire le anteprime reali con risultati, metriche o testimonianze inventate.",
+      "**Don't** collegare repository privati o pubblicare codice privato di florame.ai.",
+      "**Don't** aggiungere movimento continuo o obbligare l'animazione con movimento ridotto attivo.",
+      "**Don't** introdurre tracker o contatti personali non approvati."
+    ]
+  }
+}
